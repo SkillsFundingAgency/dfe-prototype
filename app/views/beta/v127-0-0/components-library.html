@@ -1,0 +1,67 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Components library" %}
+
+{% block content %}
+<!-- Components library page -->
+<main id="content" role="main">
+	<div class="">
+		<a href="start.html" class="govuk-back-link">Back</a>
+	</div>
+
+	<div class="grid-row">
+
+		<div class="column-full">
+
+			<!-- USER JOURNEYS -->
+		
+			<div class="form-block">
+				<h1 class="govuk-heading-l">
+					Components library
+			    </h1>
+				
+				<div class="govuk-body">
+					<ul class="govuk-list govuk-list--bullet">
+					<li><p class="govuk-body">
+						<a href="#" class="govuk-link" rel="noreferrer noopener" target="_blank">Have a link out to GOV GDS website too</a>
+					   </p>
+					</li>
+					<li><p class="govuk-body">
+						<a href="#" class="govuk-link" rel="noreferrer noopener" target="_blank">Accordion</a>
+					   </p>
+					</li>
+					<li><p class="govuk-body">
+						<a href="#" class="govuk-link" rel="noreferrer noopener" target="_blank">Back to top</a>
+					   </p>
+					</li>
+					<li><p class="govuk-body">
+						<a href="#" class="govuk-link" rel="noreferrer noopener" target="_blank">Card (but the new green version seen in GAG)</a>
+					   </p>
+					</li>
+					<li><p class="govuk-body">
+						<a href="#" class="govuk-link" rel="noreferrer noopener" target="_blank">Download a document (need to confirm standard icons)</a>
+					   </p>
+					</li>
+					
+					</ul>	
+				</div>	
+			</div>
+		</div>
+    </div>
+</main>
+	  
+<!-- JavaScript (START) -->
+<script src="/public/javascripts/lifted/jquery-2.1.4.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- GOV.UK Design System accordion -->
+<script src="/public/javascripts/{{version}}/accordion.js"></script>
+<!-- Custom global behaviour -->
+<script src="/public/javascripts/{{version}}/custom-global-behaviour.js"></script>
+<!-- JavaScript (END) -->
+	  <script>
+		function navigateTo()
+		{
+			window.location.href="../beta/v127-0-0/start.html";
+		}
+	  </script>
+{% endblock %}

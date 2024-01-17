@@ -1,0 +1,60 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+{% block content %}
+<!-- Index page  -->
+<main id="content" role="main">
+
+	<div class="grid-row">
+
+		<div class="column-full">
+
+			<div class="form-block">
+				<h1 class="govuk-heading-l">
+					Manage your education and skills funding prototype
+        		  <span class="govuk-caption-xl">GOV.UK prototype kit version <span class="govuk-!-font-weight-bold">{{releaseVersion}}</span></h1>   
+				<div class="app-prose-scope"> 
+				<p>The prototype of this new kit starts from version 127-0-0. To see previous versions of the MYESF prototype and journeys, please refer to the Old <abbr title="Manage your education and skills funding">MYESF</abbr> prototype section below. user journey from the list below.</p>
+			    </div>
+			</div>
+
+			<!-- USER JOURNEYS -->
+			<div class="govuk-!-margin-top-8 ">
+				<button type="submit" class="govuk-button" data-module="govuk-button" onclick="navigateTo()">
+					Link to new prototype
+				  </button>
+			</div>
+			<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible ">
+			<div class="form-block">
+				<h1 class="govuk-heading-l">
+					Old MYESF prototype
+			    </h1>
+			</div>
+			<div class="govuk-body">
+				<ul class="govuk-list govuk-list--bullet">
+				<li><p class="govuk-body">
+					<a href="https://pds-test-sfsprototype-as.azurewebsites.net/" class="govuk-link" rel="noreferrer noopener" target="_blank">Index page (opens in new tab)</a>
+				  </p></li>
+				
+				</ul>	
+			</div>	
+		</div>	
+    </div>
+</main>
+	  
+<!-- JavaScript (START) -->
+<script src="/public/javascripts/lifted/jquery-2.1.4.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- GOV.UK Design System accordion -->
+<script src="/public/javascripts/{{version}}/accordion.js"></script>
+<!-- Custom global behaviour -->
+<script src="/public/javascripts/{{version}}/custom-global-behaviour.js"></script>
+<!-- JavaScript (END) -->
+	  <script>
+		function navigateTo()
+		{
+			window.location.href="../beta/v127-0-0/start.html";
+		}
+	  </script>
+{% endblock %}
