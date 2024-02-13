@@ -1,4 +1,10 @@
 {
   "serviceName": "Manage your education and skills funding", 
-  "useAuth" : "false"
+  "useAuth" : "false",
+  "useHttps": "true",  
+  "port": "3000",
+  "useAutoStoreData": "true",
+  "useDocumentation": "true",
+  "cookieText": "GOV.UK uses cookies to make the site simpler. <a>Find out more about cookies</a>",
+  "useBrowserSync": "true"
 }
