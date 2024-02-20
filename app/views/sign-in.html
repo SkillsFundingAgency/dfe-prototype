@@ -1,0 +1,58 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Sign-in" %}
+
+{% block content %}
+<div class="govuk-width-container">
+    <main class="govuk-main-wrapper">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <h1 class="govuk-heading-xl heading-space">Department for Education Sign-in</h1>
+        </div>
+      </div>
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <p class="govuk-body-l">Sign-in to access DFE online services</p>
+          <fieldset class="govuk-fieldset">
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="username">
+                Username
+              </label>
+              <input class="govuk-input" id="username" name="username" type="text" autocomplete="username">
+            </div>
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="Password">
+                Password
+              </label>
+              <input class="govuk-input" id="password" name="password" type="text" autocomplete="password">
+              <p><a class="govuk-link" href="#">Forgotten your password?</a></p>
+            </div>
+            <div class="govuk-inset-text">
+                <p>By signing in you accept <a href="#">DfE sign-in terms and conditions</a>.</p>
+            </div>
+          </fieldset>
+          <div >
+            <a class="govuk-button" href="./General-annual-grant/dashboard.html">
+              Sign in
+            </a>
+            <a class="govuk-button govuk-button--secondary" href="" >
+              Create account
+            </a>
+          </div>
+        </div>
+      </div>
+      <details class="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Services accessed using DfE sign-in
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          test     
+         </div>
+      </details>
+      <p class="govuk-body-m">If you are inactive for 20 minutes, your session will timeout.</p>
+    </main>
+  </div>
+
+{% endblock %}

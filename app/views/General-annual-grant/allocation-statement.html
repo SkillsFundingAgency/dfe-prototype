@@ -1,0 +1,34 @@
+{% extends "layouts/main.html" %}
+ 
+{% set pageName="Home" %}
+ 
+{% block content %}
+<!-- Phase banner -->
+ <div class="govuk-phase-banner"style="margin-top:0px;">
+    <p class="govuk-phase-banner__content">
+        <span class="govuk-phase-banner__text">The Dochester Academy(UKPRN:12345678) </span>
+        <span class="govuk-link margin-left"><a href="view-your-roles">View your sub-services</a></span>
+        <span class="govuk-link space-left"><a href="#">Sign out</a></span>
+    </p>
+ </div>
+<!-- Pahse banner end -->
+<div class="govuk-width-container">
+    <div class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="#">Home</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="#">Your allocation statements</a>
+          </li>
+        </ol>
+      </div>
+    <main class="govuk-main-wrapper heading-space">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <h1 class="govuk-heading-xl">Page title</h1>
+        </div>
+      </div>
+    </main>
+  </div>
+{% endblock %}

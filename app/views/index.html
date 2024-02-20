@@ -4,10 +4,10 @@
  
 {% block content %}
  
-<div class="govuk-grid-row">
+<div class="govuk-grid-row ">
 <div class="govuk-grid-column-full">
  
-    <h1 class="govuk-heading-xl">
+    <h1 class="govuk-heading-xl heading-space">
       {{ serviceName }}
 <span class="govuk-caption-xl">GOV.UK prototype kit version <span class="govuk-!-font-weight-bold">{{releaseVersion}}</span></h1>
 </h1>
@@ -18,9 +18,8 @@
 
   <div class="govuk-!-margin-top-8 ">
    <p>
-    <a  href="/start">
-      START
-</a>
+    <a class="govuk-button" href="/start">
+      Start</a>
 </p>
   </div>
 
@@ -30,7 +29,13 @@
         Old MYESF prototype
 </h1>
 </div>
-    {% include "govuk-prototype-kit/includes/homepage-bottom.njk" %}
+<div class="govuk-!-margin-top-8 ">
+  <p>
+   <a class="govuk-link" href="/start">
+     Link to Old Prototype</a>
+</p>
+ </div>
+    <!-- {% include "govuk-prototype-kit/includes/homepage-bottom.njk" %} -->
 </div>
 </div>
  
