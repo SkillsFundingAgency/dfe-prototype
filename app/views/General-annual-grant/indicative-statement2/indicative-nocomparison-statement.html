@@ -1,0 +1,607 @@
+{% extends "layouts/main.html" %}
+ 
+{% set pageName="Pagename" %}
+ 
+{% block content %}
+<!-- Phase banner -->
+<div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+        <span class="govuk-phase-banner__text">The Dochester Academy(UKPRN:12345678) </span>
+        <span class="govuk-link margin-left"><a href="view-your-roles">View your sub-services</a></span>
+        <span class="govuk-link space-left"><a href="#">Sign out</a></span>
+    </p>
+ </div>
+<!-- Pahse banner end -->
+<!--  Page layout-->
+<div class="govuk-width-container">
+    <div class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="#">Home</a>
+          </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="#">Your allocation statements</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+                GAG statements
+              </li>
+        </ol>
+      </div>
+    <main class="govuk-main-wrapper">
+      <div class="govuk-grid-row">
+        
+        <div class="govuk-grid-column-full">
+            <span class="govuk-caption-l heading-space">This allocation: Published D/M/Y. Estimated open date: D/M/Y 
+                 <strong class="govuk-tag govuk-tag--blue">
+                Latest
+              </strong> </span>
+            <h1 class="govuk-heading-l">Indicative general annual grant: AY 2023 to 2024 </h1>
+        </div>
+      </div>
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+                <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset">
+                      <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                        <h1 class="govuk-fieldset__heading">
+                            Select a radio button to compare this statement.
+                        </h1>
+                      </legend>
+                      <div class="govuk-radios" data-module="govuk-radios">
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="no-Comparison" name="radios" type="radio" value="nocomparison" data-url="indicative-nocomparison-statement.html" checked >
+                          <label class="govuk-label govuk-radios__label" for="no-Comparison"  >
+                            No comparison
+                          </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="previous-Statement" name="radios" type="radio" value="previous" data-url="indicative-comparison-statement.html" >
+                          <label class="govuk-label govuk-radios__label" for="previous-Statement">
+                            Compare to previous indicative statement, published D/M/Y
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+            </div>
+            <div class="govuk-grid-column-full">
+                <h2 class="govuk-heading-m govuk-!-margin-bottom-0">Total allocation<span class="govuk-body govuk-!-font-weight-regular"> (based on being open 123 days)</span></h2>
+                <h2 class="govuk-heading-m">£6,234,567.89</h2>
+            </div>
+            <div class="govuk-grid-column-full">
+                <div class="govuk-tabs" data-module="govuk-tabs">
+                    <h2 class="govuk-tabs__title">
+                      Details
+                    </h2>
+                    <ul class="govuk-tabs__list">
+                      <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                        <a class="govuk-tabs__tab" href="#sb">
+                            School budget share
+                        </a>
+                      </li>
+                      <li class="govuk-tabs__list-item">
+                        <a class="govuk-tabs__tab" href="#mfg">
+                            Minimum funding guarantee
+                        </a>
+                      </li>
+                      <li class="govuk-tabs__list-item">
+                        <a class="govuk-tabs__tab" href="#sg">
+                            Start-up grant
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="govuk-tabs__panel" id="sb">
+                      <h2 class="govuk-heading-m govuk-!-margin-bottom-0">Total school budget share</h2>
+                      <h2 class="govuk-heading-m">£xxx</h2>
+                      <table class="govuk-table">
+                        <caption class="govuk-table__caption govuk-table__caption--s govuk-!-padding-top-4 govuk-!-padding-bottom-2">Basic entitlement</caption>
+                        <thead class="govuk-table__head">
+                          <tr class="govuk-table__row">
+                            <th scope="col" class="govuk-table__header govuk-!-width-one-half">Description</th>
+                            <th scope="col" class="govuk-table__header">Pupil numbers</th>
+                            <th scope="col" class="govuk-table__header">Full year sub-total</th>
+                            <th scope="col" class="govuk-table__header">Partial year sub-total</th>
+                          </tr>
+                        </thead>
+                        <tbody class="govuk-table__body">
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell govuk-!-width-one-half">Primary</td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"></td>
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell govuk-!-width-one-half">Total basic entitlement</td>
+                            <td class="govuk-table__cell">y</td>
+                            <td class="govuk-table__cell">1</td>
+                            <td class="govuk-table__cell">1</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p class="govuk-body">
+                        <a href="#" class="govuk-link" rel="noreferrer noopener" target="_blank">More about basic entitlement (opens in new tab)</a>
+                      </p>
+                      <table class="govuk-table">
+                        <caption class="govuk-table__caption govuk-table__caption--s govuk-!-padding-top-4 govuk-!-padding-bottom-2">Deprivation</caption>
+                        <thead class="govuk-table__head">
+                          <tr class="govuk-table__row">
+                            <th scope="col" class="govuk-table__header">Description</th>
+                            <th scope="col" class="govuk-table__header">Pupil numbers</th>
+                            <th scope="col" class="govuk-table__header">Full year sub-total</th>
+                            <th scope="col" class="govuk-table__header">Partial year sub-total</th>
+                          </tr>
+                        </thead>
+                        <tbody class="govuk-table__body">
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Primary IDACI band A (most deprived)</td>
+                            <td class="govuk-table__cell"> </td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"> </td>
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Primary IDACI band B </td>
+                            <td class="govuk-table__cell">y</td>
+                            <td class="govuk-table__cell">1</td>
+                            <td class="govuk-table__cell">1</td>
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Primary IDACI band C </td>
+                            <td class="govuk-table__cell">2</td>
+                            <td class="govuk-table__cell">1</td>
+                            <td class="govuk-table__cell">1</td>
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Primary IDACI band D </td>
+                            <td class="govuk-table__cell">2</td>
+                            <td class="govuk-table__cell">1</td>
+                            <td class="govuk-table__cell">1</td>
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Primary IDACI band E</td>
+                            <td class="govuk-table__cell">2</td>
+                            <td class="govuk-table__cell">1</td>
+                            <td class="govuk-table__cell">1</td>
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Primary IDACI band F (least deprived)  </td>
+                            <td class="govuk-table__cell">2</td>
+                            <td class="govuk-table__cell">1</td>
+                            <td class="govuk-table__cell">1</td>
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Primary free school meals</td>
+                            <td class="govuk-table__cell">2</td>
+                            <td class="govuk-table__cell">1</td>
+                            <td class="govuk-table__cell">1</td>
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Primary pupils eligible for free school meals in past 6 years </td>
+                            <td class="govuk-table__cell">2</td>
+                            <td class="govuk-table__cell">1</td>
+                            <td class="govuk-table__cell">1</td>
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Total deprivation </td>
+                            <td class="govuk-table__cell">2</td>
+                            <td class="govuk-table__cell">1</td>
+                            <td class="govuk-table__cell">1</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p class="govuk-body">
+                        <a href="#" class="govuk-link" rel="noreferrer noopener" target="_blank">What Income Deprivation Affecting Children Index (IDACI) bands are (opens in new tab)</a>
+                      </p>
+                      <p class="govuk-body">
+                        <a href="#" class="govuk-link" rel="noreferrer noopener" target="_blank">More about free school meals  (opens in new tab)</a>
+                      </p>
+                      <table class="govuk-table">
+                        <caption class="govuk-table__caption govuk-table__caption--s govuk-!-padding-top-4 govuk-!-padding-bottom-2">Looked-after children</caption>
+                        <thead class="govuk-table__head">
+                          <tr class="govuk-table__row">
+                            <th scope="col" class="govuk-table__header govuk-!-width-one-half">Description</th>
+                            <th scope="col" class="govuk-table__header">Pupil numbers</th>
+                            <th scope="col" class="govuk-table__header">Full year sub-total</th>
+                            <th scope="col" class="govuk-table__header">Partial year sub-total</th>
+                          </tr>
+                        </thead>
+                        <tbody class="govuk-table__body">
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell govuk-!-width-one-half">Total looked-after children</td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p class="govuk-body">
+                        <a href="#" class="govuk-link" rel="noreferrer noopener" target="_blank">More about looked-after children (opens in new tab)</a>
+                      </p>
+                      <table class="govuk-table">
+                        <caption class="govuk-table__caption govuk-table__caption--s govuk-!-padding-top-4 govuk-!-padding-bottom-2">Low prior attainment</caption>
+                        <thead class="govuk-table__head">
+                          <tr class="govuk-table__row">
+                            <th scope="col" class="govuk-table__header govuk-!-width-one-half">Description</th>
+                            <th scope="col" class="govuk-table__header">Pupil numbers</th>
+                            <th scope="col" class="govuk-table__header">Full year sub-total</th>
+                            <th scope="col" class="govuk-table__header">Partial year sub-total</th>
+                          </tr>
+                        </thead>
+                        <tbody class="govuk-table__body">
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell govuk-!-width-one-half">Primary schools not achieving the expected level of development</td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"></td>
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell govuk-!-width-one-half">Total low prior attainment</td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p class="govuk-body">
+                        <a href="#" class="govuk-link" rel="noreferrer noopener" target="_blank">More about low prior attainment (opens in new tab)</a>
+                      </p>
+                      <table class="govuk-table">
+                        <caption class="govuk-table__caption govuk-table__caption--s govuk-!-padding-top-4 govuk-!-padding-bottom-2">English as an additional language (EAL)</caption>
+                        <thead class="govuk-table__head">
+                          <tr class="govuk-table__row">
+                            <th scope="col" class="govuk-table__header govuk-!-width-one-half">Description</th>
+                            <th scope="col" class="govuk-table__header">Pupil numbers</th>
+                            <th scope="col" class="govuk-table__header">Full year sub-total</th>
+                            <th scope="col" class="govuk-table__header">Partial year sub-total</th>
+                          </tr>
+                        </thead>
+                        <tbody class="govuk-table__body">
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell govuk-!-width-one-half">Primary pupils in first 3 years of education within England</td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"></td>
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell govuk-!-width-one-half">Total English as an additional language</td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p class="govuk-body">
+                        <a href="#" class="govuk-link" rel="noreferrer noopener" target="_blank">More about English as an additional language (opens in new tab)</a>
+                      </p>
+                      <table class="govuk-table">
+                        <caption class="govuk-table__caption govuk-table__caption--s govuk-!-padding-top-4 govuk-!-padding-bottom-2">Mobility</caption>
+                        <thead class="govuk-table__head">
+                          <tr class="govuk-table__row">
+                            <th scope="col" class="govuk-table__header govuk-!-width-one-half">Description</th>
+                            <th scope="col" class="govuk-table__header">Pupil numbers</th>
+                            <th scope="col" class="govuk-table__header">Full year sub-total</th>
+                            <th scope="col" class="govuk-table__header">Partial year sub-total</th>
+                          </tr>
+                        </thead>
+                        <tbody class="govuk-table__body">
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell govuk-!-width-one-half">Primary pupils starting school on unusual entry dates (proportion above 6%)</td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"></td>
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell govuk-!-width-one-half">Total mobility</td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p class="govuk-body">
+                        <a href="#" class="govuk-link" rel="noreferrer noopener" target="_blank">More about mobility (opens in new tab)</a>
+                      </p>
+                      <div class="govuk-grid-row">
+                        <div class="govuk-grid-column-three-quarters">
+                          <h2 class="govuk-heading-s govuk-!-padding-top-4 govuk-!-padding-bottom-0 text-align-right">Full year </h2>
+                        </div>
+                        <div class="govuk-grid-column-one-quarters">
+                          <h2 class="govuk-heading-s govuk-!-padding-top-4  govuk-!-padding-bottom-0 govuk-!-padding-right-9 text-align-right">Partial year  </h2>
+                        </div>
+                      </div>
+                          <div class="govuk-grid-row">
+                            <div class="govuk-grid-column-one-quarters">
+                              <h2 class="govuk-heading-s  govuk-!-padding-left-3">Total pupil-led factors  
+                                <span class="govuk-heading-s  govuk-!-padding-left-2 text-align-right">£1,885,630.60 </span>
+                                <span class="govuk-heading-s  govuk-!-padding-right-9 text-align-right">£1,885,630.60 </span>
+                              </h2>
+                            </div>
+                          </div>
+                      <table class="govuk-table">
+                        <caption class="govuk-table__caption govuk-table__caption--s govuk-!-padding-top-4 govuk-!-padding-bottom-2">Lump sum</caption>
+                        <thead class="govuk-table__head">
+                          <tr class="govuk-table__row">
+                            <th scope="col" class="govuk-table__header govuk-!-width-one-half">Description</th>
+                            <th scope="col" class="govuk-table__header">Pupil numbers</th>
+                            <th scope="col" class="govuk-table__header">Full year sub-total</th>
+                            <th scope="col" class="govuk-table__header">Partial year sub-total</th>
+                          </tr>
+                        </thead>
+                        <tbody class="govuk-table__body">
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell govuk-!-width-one-half">Total primary lump sum</td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p class="govuk-body">
+                        <a href="#" class="govuk-link" rel="noreferrer noopener" target="_blank">More about lump sum (opens in new tab)</a>
+                      </p>
+                      <table class="govuk-table">
+                        <caption class="govuk-table__caption govuk-table__caption--s govuk-!-padding-top-4 govuk-!-padding-bottom-2">Sparsity</caption>
+                        <thead class="govuk-table__head">
+                          <tr class="govuk-table__row">
+                            <th scope="col" class="govuk-table__header govuk-!-width-one-half">Description</th>
+                            <th scope="col" class="govuk-table__header">Pupil numbers</th>
+                            <th scope="col" class="govuk-table__header">Full year sub-total</th>
+                            <th scope="col" class="govuk-table__header">Partial year sub-total</th>
+                          </tr>
+                        </thead>
+                        <tbody class="govuk-table__body">
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell govuk-!-width-one-half">Total for small academy in sparsely populated areas</td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="govuk-grid-row">
+                        <div class="govuk-grid-column-three-quarters">
+                          <h2 class="govuk-heading-s govuk-!-padding-top-4 govuk-!-padding-bottom-0 text-align-right">Full year </h2>
+                        </div>
+                        <div class="govuk-grid-column-one-quarters">
+                          <h2 class="govuk-heading-s govuk-!-padding-top-4  govuk-!-padding-bottom-0 govuk-!-padding-right-9 text-align-right">Partial year  </h2>
+                        </div>
+                      </div>
+                          <div class="govuk-grid-row">
+                            <div class="govuk-grid-column-one-quarters">
+                              <h2 class="govuk-heading-s  govuk-!-padding-left-3">Total factors  
+                                <span class="govuk-heading-s  govuk-!-padding-left-2 text-align-right">£1,885,630.60 </span>
+                                <span class="govuk-heading-s  govuk-!-padding-right-9 text-align-right">£1,885,630.60 </span>
+                              </h2>
+                            </div>
+                          </div>
+                          <table class="govuk-table">
+                            <caption class="govuk-table__caption govuk-table__caption--s govuk-!-padding-top-4 govuk-!-padding-bottom-2">Minimum funding level</caption>
+                            <thead class="govuk-table__head">
+                              <tr class="govuk-table__row">
+                                <th scope="col" class="govuk-table__header govuk-!-width-one-half">Description</th>
+                                <th scope="col" class="govuk-table__header">Pupil numbers</th>
+                                <th scope="col" class="govuk-table__header">Full year sub-total</th>
+                                <th scope="col" class="govuk-table__header">Partial year sub-total</th>
+                              </tr>
+                            </thead>
+                            <tbody class="govuk-table__body">
+                              <tr class="govuk-table__row">
+                                <td class="govuk-table__cell govuk-!-width-one-half">Minimum per pupil funding level set by local authority</td>
+                                <td class="govuk-table__cell"></td>
+                                <td class="govuk-table__cell"></td>
+                                <td class="govuk-table__cell"></td>
+                              </tr>
+                              <tr class="govuk-table__row">
+                                <td class="govuk-table__cell govuk-!-width-one-half">Total adjustment to make sure minimum funding level is met</td>
+                                <td class="govuk-table__cell"></td>
+                                <td class="govuk-table__cell"></td>
+                                <td class="govuk-table__cell"></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <p class="govuk-body">
+                            <a href="#" class="govuk-link" rel="noreferrer noopener" target="_blank">More about minimum per pupil funding level (opens in new tab)</a>
+                          </p>
+                          <div class="govuk-grid-row">
+                            <div class="govuk-grid-column-three-quarters">
+                              <h2 class="govuk-heading-s govuk-!-padding-top-4 govuk-!-padding-bottom-0 text-align-right">Full year </h2>
+                            </div>
+                            <div class="govuk-grid-column-one-quarters">
+                              <h2 class="govuk-heading-s govuk-!-padding-top-4  govuk-!-padding-bottom-0 govuk-!-padding-right-9 text-align-right">Partial year  </h2>
+                            </div>
+                          </div>
+                              <div class="govuk-grid-row">
+                                <div class="govuk-grid-column-one-quarters">
+                                  <h2 class="govuk-heading-s  govuk-!-padding-left-3">Total funding adjustments
+                                    <span class="govuk-heading-s  govuk-!-padding-left-2 text-align-right">£1,885,630.60 </span>
+                                    <span class="govuk-heading-s  govuk-!-padding-right-9 text-align-right">£1,885,630.60 </span>
+                                  </h2>
+                                </div>
+                              </div>
+                              <div class="govuk-grid-row">
+                                <div class="govuk-grid-column-one-quarters">
+                                  <h2 class="govuk-heading-s  govuk-!-padding-left-3 govuk-!-padding-top-3">Total school budget share
+                                    <span class="govuk-heading-s  govuk-!-padding-left-2 text-align-right"> </span>
+                                    <span class="govuk-heading-s  text-align-right">£1,885,630.60 </span>
+                                  </h2>
+                                </div>
+                              </div>
+                              <p class="govuk-body">£0.00 from total school budget share is 
+                                <a href="#" class="govuk-link" rel="noreferrer noopener" target="_blank">funding de-delegation to local authority for central services (opens in new tab) </a>
+                                when this was a maintained school. After the school becomes an academy, the local authority will keep £0 to provide those central services until D/M/Y.
+                              </p>
+                              <p class="govuk-body">£39,081.76 from your total school budget share is an 
+                                <a href="#" class="govuk-link" rel="noreferrer noopener" target="_blank">indicative amount (opens in new tab)  </a>that you may set aside for pupils with SEN.
+                              </p>
+                    </div>
+                    <!--Minimum funding guarentee-->
+                    <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="mfg">
+                      <h2 class="govuk-heading-m govuk-!-margin-bottom-0">Total Minimum funding guarantee</h2>
+                      <h2 class="govuk-heading-m">£1,234,567.89</h2>
+                      <div class="govuk-inset-text">
+                        <a href="#" class="govuk-link" rel="noreferrer noopener" target="_blank"> Protection funding (opens in new tab)</a> to make sure change in per pupil school budget share between AY? 2022 to 2023 and AY? 2023 to 2024 will not fall below the local authority guaranteed change of 2%.
+                      </div>
+                      <table class="govuk-table">
+                        <caption class="govuk-table__caption govuk-table__caption--s govuk-!-padding-top-4 govuk-!-padding-bottom-2">Minimum funding guarantee for days open (not adjusted for pupils)</caption>
+                        <thead class="govuk-table__head">
+                          <tr class="govuk-table__row">
+                            <th scope="col" class="govuk-table__header">Description</th>
+                            <th scope="col" class="govuk-table__header">Calculation</th>
+                            <th scope="col" class="govuk-table__header">Sub-total</th>
+                          </tr>
+                        </thead>
+                        <tbody class="govuk-table__body">
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Minimum funding guarantee for full year</td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"></td>
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Days in full year</td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"></td>
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Days open</td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"></td>
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Minimum funding guarantee for days open (not adjusted for pupils)</td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table class="govuk-table">
+                        <caption class="govuk-table__caption govuk-table__caption--s govuk-!-padding-top-4 govuk-!-padding-bottom-2">Pupil adjustment</caption>
+                        <thead class="govuk-table__head">
+                          <tr class="govuk-table__row">
+                            <th scope="col" class="govuk-table__header">Description</th>
+                            <th scope="col" class="govuk-table__header">Calculation</th>
+                            <th scope="col" class="govuk-table__header">Sub-total</th>
+                          </tr>
+                        </thead>
+                        <tbody class="govuk-table__body">
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Pupil numbers actually funded</td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"></td>
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Pupil numbers used in original minimum funding guarantee calculation</td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"></td>
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Pupil adjustment</td> 
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table class="govuk-table">
+                        <caption class="govuk-table__caption govuk-table__caption--s govuk-!-padding-top-4 govuk-!-padding-bottom-2">Minimum funding guarantee for days open (adjusted for pupils)</caption>
+                        <thead class="govuk-table__head">
+                          <tr class="govuk-table__row">
+                            <th scope="col" class="govuk-table__header">Description</th>
+                            <th scope="col" class="govuk-table__header">Calculation</th>
+                            <th scope="col" class="govuk-table__header">Sub-total</th>
+                          </tr>
+                        </thead>
+                        <tbody class="govuk-table__body">
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Minimum funding guarantee for days open (not adjusted for pupils)</td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"></td>
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Pupil adjustment</td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"></td>
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Minimum funding guarantee for days open (adjusted for pupils)</td> 
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="govuk-grid-row">
+                        <div class="govuk-grid-column-one-quarters">
+                          <h2 class="govuk-heading-s  govuk-!-padding-left-3 govuk-!-padding-top-3">Total minimum funding guarantee
+                            <span class="govuk-heading-s  govuk-!-padding-left-2 text-align-right"> </span>
+                            <span class="govuk-heading-s  text-align-right">£1,885,630.60 </span>
+                          </h2>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Start-up grant-->
+                    <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="sg">
+                      <h2 class="govuk-heading-m govuk-!-margin-bottom-0">Total start-up grant for new sponsored academy</h2>
+                      <h2 class="govuk-heading-m">£xxx</h2>
+                      <table class="govuk-table">
+                        <caption class="govuk-table__caption govuk-table__caption--s govuk-!-padding-top-4 govuk-!-padding-bottom-2">Start-up grant</caption>
+                       
+                        <thead class="govuk-table__head">
+                          <tr class="govuk-table__row">
+                            <th scope="col" class="govuk-table__header">Description</th>
+                            <th scope="col" class="govuk-table__header"></th>
+                            <th scope="col" class="govuk-table__header">Sub-total</th>
+                          </tr>
+                        </thead>
+                        <tbody class="govuk-table__body">
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Flat rate - paid first year of opening</td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"></td>
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Growth towards full capacity - paid over 2 years to primary schools</td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"></td>
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Total start-up grant</td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p class="govuk-body">
+                        <a href="#" class="govuk-link govuk-link--no-visited-state">More about start-up grant (opens in new tab)</a>
+                      </p>
+                      <div class="govuk-grid-row">
+                        <div class="govuk-grid-column-one-quarters">
+                          <h2 class="govuk-heading-s  govuk-!-padding-left-3 govuk-!-padding-top-3">Total start-up grant for new sponsored academy
+                            <span class="govuk-heading-s  govuk-!-padding-left-2 text-align-right"> </span>
+                            <span class="govuk-heading-s  text-align-right">£1,885,630.60 </span>
+                          </h2>
+                        </div>
+                      </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+        <p class="govuk-body">
+          <img src="/public/images/user.png" alt="print icon"><a href="#" class="govuk-link">Save or print this statement</a>
+        </p>
+        <p class="govuk-body">
+          <img src="/public/images/user.png" alt="download icon"><a href="#" class="govuk-link">Download the raw data for this statement (CSV, 208KB)
+              You may need a different format if you’re using assistive technology. Request an accessible format.</a>
+        </p>
+          <h2 class="govuk-heading-m">Allocation histrory</h2>
+          <p class="govuk-body">
+            <a href="#" class="govuk-link">Visit history of allocated funding</a>
+          </p>
+          <h2 class="govuk-heading-m">General annual grant resources</h2>
+          <p class="govuk-body">
+            <a href="#" class="govuk-link">General annual grant allocation guides [year] to [year] (opens in new tab)</a>
+          </p>
+        </div>
+      </div>
+    </main>
+  </div>
+  <!-- End-->
+{% endblock %}
