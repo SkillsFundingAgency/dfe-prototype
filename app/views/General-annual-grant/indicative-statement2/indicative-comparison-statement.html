@@ -1,6 +1,6 @@
 {% extends "layouts/main.html" %}
  
-{% set pageName="Pagename" %}
+{% set pageName="Indicative-statement" %}
  
 {% block content %}
 <!-- Phase banner -->
@@ -17,13 +17,13 @@
     <div class="govuk-breadcrumbs">
         <ol class="govuk-breadcrumbs__list">
           <li class="govuk-breadcrumbs__list-item">
-            <a class="govuk-breadcrumbs__link" href="#">Home</a>
+            <a class="govuk-breadcrumbs__link" href="../../start.html">Home</a>
           </li>
             <li class="govuk-breadcrumbs__list-item">
-              <a class="govuk-breadcrumbs__link" href="#">Your allocation statements</a>
+              <a class="govuk-breadcrumbs__link" href="../allocation-statement2.html">Your allocation statements</a>
             </li>
             <li class="govuk-breadcrumbs__list-item">
-                GAG statements
+              Indicative general annual grant: AY 2023 to 2024
               </li>
         </ol>
       </div>
@@ -31,7 +31,7 @@
       <div class="govuk-grid-row">
         
         <div class="govuk-grid-column-full">
-            <span class="govuk-caption-l heading-space">This allocation: Published D/M/Y. Estimated open date: D/M/Y 
+            <span class="govuk-caption-m heading-space">This allocation: <span class="govuk-!-font-weight-bold">Published 15 April 2024</span>. Opening date:<span class="govuk-!-font-weight-bold">1 May 2024</span> 
                  <strong class="govuk-tag govuk-tag--blue">
                 Latest
               </strong> </span>
@@ -51,15 +51,15 @@
                       </legend>
                       <div class="govuk-radios" data-module="govuk-radios">
                         <div class="govuk-radios__item">
-                          <input class="govuk-radios__input" id="no-Comparison" name="radios" type="radio" value="nocomparison" data-url="indicative-nocomparison-statement.html"  >
+                          <input class="govuk-radios__input" id="no-Comparison" name="radios" type="radio" value="nocomparison" data-url="indicative-nocomparison-statement.html" >
                           <label class="govuk-label govuk-radios__label" for="no-Comparison"  >
                             No comparison
                           </label>
                         </div>
                         <div class="govuk-radios__item">
-                          <input class="govuk-radios__input" id="previous-Statement" name="radios" type="radio" value="previous" data-url="indicative-comparison-statement.html" checked>
+                          <input class="govuk-radios__input" id="previous-Statement" name="radios" type="radio" value="previous" data-url="indicative-comparison-statement.html" checked >
                           <label class="govuk-label govuk-radios__label" for="previous-Statement">
-                            Compare to previous indicative statement, published D/M/Y
+                            Compare to previous indicative statement, published 28 March 2024
                           </label>
                         </div>
                       </div>
@@ -67,8 +67,14 @@
                   </div>
             </div>
             <div class="govuk-grid-column-full">
-                <h2 class="govuk-heading-m govuk-!-margin-bottom-0">Total allocation<span class="govuk-body govuk-!-font-weight-regular"> (based on being open 123 days)</span></h2>
-                <h2 class="govuk-heading-m">£6,234,567.89</h2>
+                <h2 class="govuk-heading-m govuk-!-margin-bottom-0">Total allocation for AY 2023 to 2024 <span class="govuk-body govuk-!-font-weight-regular"> (based on being open 123 days)</span></h2>
+                <h2 class="govuk-heading-m">£754,646.06
+                  <!--variance format-->
+                  <p id="IncreasedByVariance"  class="variance-hidden-text"aria-label="Increased by">Increased by</p>
+                  <svg class="app-c-back-to-top__icon" style="transform: rotate(180deg);"><path fill=	#d4351c d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path></svg> 
+                  <a class="variance-text decrease-by-variance" aria-describedby="DecreasedByVariance"  alt="A red down arrow indicating a increased value" title="Decreased by">£167,291.71</a>
+                <!--variance format-->
+                </h2>
             </div>
             <div class="govuk-grid-column-full">
                 <div class="govuk-tabs" data-module="govuk-tabs">
@@ -94,7 +100,13 @@
                     </ul>
                     <div class="govuk-tabs__panel" id="sb">
                       <h2 class="govuk-heading-m govuk-!-margin-bottom-0">Total school budget share</h2>
-                      <h2 class="govuk-heading-m">£xxx</h2>
+                      <h2 class="govuk-heading-m">£676,888.09
+                        <!--variance format-->
+                         <p id="IncreasedByVariance"  class="variance-hidden-text"aria-label="Increased by">Increased by</p>
+                          <svg class="app-c-back-to-top__icon" style="transform: rotate(180deg);"><path fill=	#d4351c d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path></svg> 
+                          <a class="variance-text decrease-by-variance" aria-describedby="DecreasedByVariance"  alt="A red down arrow indicating a increased value" title="Decreased by">£165,094.64</a>
+                        <!--variance format-->
+                      </h2>
                       <table class="govuk-table">
                         <caption class="govuk-table__caption govuk-table__caption--s govuk-!-padding-top-4 govuk-!-padding-bottom-2">Basic entitlement</caption>
                         <thead class="govuk-table__head">
@@ -437,8 +449,8 @@
                     </div>
                     <!--Minimum funding guarentee-->
                     <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="mfg">
-                      <h2 class="govuk-heading-m govuk-!-margin-bottom-0">Total Minimum funding guarantee</h2>
-                      <h2 class="govuk-heading-m">£1,234,567.89</h2>
+                      <h2 class="govuk-heading-m govuk-!-margin-bottom-0">Total minimum funding guarantee</h2>
+                      <h2 class="govuk-heading-m">£9,007.97</h2>
                       <div class="govuk-inset-text">
                         <a href="#" class="govuk-link" rel="noreferrer noopener" target="_blank"> Protection funding (opens in new tab)</a> to make sure change in per pupil school budget share between AY? 2022 to 2023 and AY? 2023 to 2024 will not fall below the local authority guaranteed change of 2%.
                       </div>
@@ -540,7 +552,7 @@
                     <!--Start-up grant-->
                     <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="sg">
                       <h2 class="govuk-heading-m govuk-!-margin-bottom-0">Total start-up grant for new sponsored academy</h2>
-                      <h2 class="govuk-heading-m">£xxx</h2>
+                      <h2 class="govuk-heading-m">£68,750.00</h2>
                       <table class="govuk-table">
                         <caption class="govuk-table__caption govuk-table__caption--s govuk-!-padding-top-4 govuk-!-padding-bottom-2">Start-up grant</caption>
                        
@@ -584,21 +596,29 @@
                  </div>
             </div>
         </div>
-        <div class="govuk-width-container">
-          <main class="govuk-main-wrapper">
-            <div class="govuk-grid-row">
-              <div class="govuk-grid-column-two-thirds">
-                <p class="govuk-body">
-                  <img class="print" src="/public/images/print.png" alt="print icon"><a href="#" class="govuk-link"style="text-align: center;">Save or print this statement</a>
-                </p>
-                <p class="govuk-body">
-                  <img class="print" src="/public/images/document.png" alt="download icon"><a href="#" class="govuk-link">Download the raw data for this statement (CSV, 208KB)
-                      You may need a different format if you’re using assistive technology. Request an accessible format.</a>
-                </p>
-              </div>
-            </div>
-          </main>
-        </div>
+           <!--print-->
+           <div class="govuk-width-container">
+            <main class="govuk-main-wrapper">
+                <div class="govuk-grid-row">
+                  <div class="govuk-grid-column-one-quarter image-width">
+                    <img class="print" src="/public/images/print.png" alt="print icon">
+                  </div>
+                  <div class="govuk-grid-column-three-quarters save-print">
+                  <a href="#" class="govuk-link">Save or print this statement</a>
+                  </div>
+                </div>
+               <!--CSV-->
+                <div class="govuk-grid-row">
+                  <div class="govuk-grid-column-one-quarter image-width">
+                    <img class="print" src="/public/images/document.png" alt="download icon">
+                  </div>
+                  <div class="govuk-grid-column-half save-print">
+                    <a href="#" class="govuk-link">Download the raw data for this statement (CSV, 208KB)</a>
+                    <p class="govuk-body">You may need a different format if you’re using assistive technology. Request an accessible format.</p>
+                  </div>
+                </div>
+            </main>
+          </div>
           <h2 class="govuk-heading-m">Allocation histrory</h2>
           <p class="govuk-body">
             <a href="#" class="govuk-link">Visit history of allocated funding</a>

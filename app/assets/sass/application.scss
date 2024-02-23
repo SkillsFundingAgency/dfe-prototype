@@ -367,7 +367,53 @@ span.has-email-alerts span.text {
 }
 
 .print{
-    width:50px;
-    height:50px;
+    width:54px;
+    height:54px;
     padding-top:10px;
+}
+.variance-text {
+	font-size: 80%;
+	margin-top: 0px;
+    vertical-align: middle;
+}
+h2 .variance-text {
+	font-size: 80% !important;
+    color:#d4351c;
+}
+td .variance-text {
+	font-size: 80% !important;
+}
+.variance-heading-no-margin {
+	margin-bottom: 0px;
+    margin-top: -5px;
+}
+.app-c-back-to-top__icon {
+    display: inline-block;
+    width: .8em;
+    height: 1em;
+    margin-top: -5px;
+    margin-right: 0px;
+    vertical-align: middle;
+}
+.variance-hidden-text
+{
+    display:hidden;
+    font-size:0px; 
+    padding-top:0px;
+}
+.decrease-by-variance
+{
+    color:#d4351c;
+    padding-left:10px;
+    text-decoration: none;
+}
+.save-print
+{
+    padding-top:30px;
+    padding-left:0px;
+    font-weight:bold;
+}
+.image-width
+{
+    width:8%;
 }

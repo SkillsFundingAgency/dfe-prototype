@@ -5,38 +5,34 @@
 {% block content %}
  
 <div class="govuk-grid-row ">
-<div class="govuk-grid-column-full">
- 
-    <h1 class="govuk-heading-xl heading-space">
-      {{ serviceName }}
-<span class="govuk-caption-xl">GOV.UK prototype kit version <span class="govuk-!-font-weight-bold">{{releaseVersion}}</span></h1>
-</h1>
-<div class="app-prose-scope"> 
-<p>The prototype of this new kit starts from version 127-0-0. To see previous versions of the MYESF prototype and journeys, please refer to the Old <abbr title="Manage your education and skills funding">MYESF</abbr> prototype section below. user journey from the list below.</p>
-</div>
-<!-- USER JOURNEYS --> 
-
-  <div class="govuk-!-margin-top-8 ">
-   <p>
-    <a class="govuk-button" href="/start">
-      Start</a>
-</p>
-  </div>
-
-<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible ">
-<div class="form-block">
-<h1 class="govuk-heading-l">
-        Old MYESF prototype
-</h1>
-</div>
-<div class="govuk-!-margin-top-8 ">
-  <p>
-   <a class="govuk-link" href="/start">
-     Link to Old Prototype</a>
-</p>
- </div>
+  <div class="govuk-grid-column-full">
+            <h1 class="govuk-heading-xl heading-space">
+              {{ serviceName }}
+              <span class="govuk-caption-xl">GOV.UK prototype kit version <span class="govuk-!-font-weight-bold">{{releaseVersion}}</span></h1>
+            </h1>
+            <div class="app-prose-scope"> 
+            <p>The prototype of this new kit starts from version 127-0-0. To see previous versions of the MYESF prototype and journeys, please refer to the Old <abbr title="Manage your education and skills funding">MYESF</abbr> prototype section below. user journey from the list below.</p>
+            </div>
+          <!-- USER JOURNEYS --> 
+              <div class="govuk-!-margin-top-8 ">
+                  <p>
+                    <a class="govuk-button" href="/start">
+                      Start</a>
+                   </p>
+              </div>
+              <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible ">
+                  <div class="form-block">
+                      <h1 class="govuk-heading-l">
+                              Old MYESF prototype
+                      </h1>
+                  </div>
+                  <div class="govuk-!-margin-top-8 ">
+                    <p>
+                      <a class="govuk-link" href="/start">
+                      Link to Old Prototype</a>
+                    </p>
+                  </div>
     <!-- {% include "govuk-prototype-kit/includes/homepage-bottom.njk" %} -->
+  </div>
 </div>
-</div>
- 
 {% endblock %}
