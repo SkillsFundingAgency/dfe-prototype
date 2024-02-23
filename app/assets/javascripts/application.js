@@ -2,7 +2,7 @@
 // For guidance on how to add JavaScript see:
 // https://prototype-kit.service.gov.uk/docs/adding-css-javascript-and-images
 //
-
+//** Comparison radio  feature for GAG statement ref link:\views\General-annual-grant\indicative-statement2\indicative-nocomparison-statement.html*/
 window.GOVUKPrototypeKit.documentReady(() => {
   // Add JavaScript here
 // Get all radio buttons
@@ -24,3 +24,5 @@ radioButtons.forEach(function(radioButton) {
    
 
 })
+
+//**End */
