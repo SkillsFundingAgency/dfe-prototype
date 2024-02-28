@@ -1,0 +1,71 @@
+{% extends "layouts/main.html" %}
+ 
+{% set pageName="Dashboard" %}
+ 
+{% block content %}
+<!-- Phase banner -->
+<div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+        <span class="govuk-phase-banner__text">The Dochester Academy(UKPRN:12345678) </span>
+        <span class="govuk-link margin-left"><a href="view-your-roles">View your sub-services</a></span>
+        <span class="govuk-link space-left"><a href="#">Sign out</a></span>
+    </p>
+ </div>
+<!-- Pahse banner end -->
+<div class="govuk-width-container">
+    <div class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="../start.html">Home</a>
+          </li>
+        </ol>
+      </div>
+    <main class="govuk-main-wrapper">
+      <div class="govuk-grid-row">
+        
+        <div class="govuk-grid-column-full">
+          <h1 class="govuk-heading-l heading-space">Manage your education and skills funding </h1>
+        </div>
+      </div>
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-half">
+                <section>
+                    <div class="grid-row">
+                        <div class="dashboard-item column-third margin-top">
+                            <a href="allocation-statement">
+                                <div class="tile-wrap variant">
+                                    <h3>Allocation statements</h3>
+                                    <p>View statements</p>
+                                    <span></span>
+                                </div>
+                            </a>
+                            <div class="alert-wrap" style="color: black;"><div><span>!</span></div><div><p>1 new statement</p></div></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="govuk-grid-column-one-half">
+                <section>
+                    <div class="grid-row">
+                        <div class="dashboard-item column-third margin-top">
+                            <a href="">
+                                <div class="tile-wrap variant">
+                                    <h3>Payment history</h3>
+                                    <p>View payments</p>
+                                    <span></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  
+{% endblock %}
