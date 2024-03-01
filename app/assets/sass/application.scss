@@ -333,7 +333,8 @@ span.has-email-alerts span.text {
     padding-left:20px;
 }
 .text-space{
-    padding-left:440px;
+    padding-left:375px;
+    padding-top:0px;
 }
 
 .text-align{
@@ -364,8 +365,39 @@ span.has-email-alerts span.text {
 .text-align-right
 {
     float:right;
+    padding-right:80px;
 }
-
+.text-spaces
+{
+ float:right;
+ padding-right:123px;
+}
+.amount
+{
+ padding-left:443px;
+}
+.value-align
+{
+ float:right;
+ padding-right:80px;
+}
+.total-amount{
+    padding-left:410px;
+}
+.total-value
+{
+    float:right;
+ padding-right:68px;
+}
+.right-align
+{
+    float:right;
+    padding-right:228px;
+}
+.text-align{
+    
+    padding-left:37.5rem;
+}
 .print{
     width:46px;
     height:46px;
@@ -418,4 +450,8 @@ td .variance-text {
 {
     width:8%;
     height:8%;
+}
+.float-right
+{
+    padding-left:390px;
 }
