@@ -424,6 +424,7 @@ h2 .variance-text {
 }
 td .variance-text {
 	font-size: 80% !important;
+    color:#d4351c;
 }
 .variance-heading-no-margin {
 	margin-bottom: 0px;
@@ -441,13 +442,13 @@ td .variance-text {
 {
     display:hidden;
     font-size:0px; 
-    padding-top:0px;
+  margin-top: -18px;
 }
 .decrease-by-variance
 {
     color:#d4351c;
-    padding-left:10px;
     text-decoration: none;
+   
 }
 .save-print
 {
