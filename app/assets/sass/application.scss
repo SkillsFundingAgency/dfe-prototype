@@ -337,8 +337,8 @@ span.has-email-alerts span.text {
     padding-top:0px;
 }
 
-.text-align{
-    padding-left:0px;
+.padding-left{
+    padding-left:130px;
 }
 .govuk-accordion__heading-number-right {
 	margin: 0px;
@@ -469,4 +469,7 @@ td .variance-text {
 {
     float:right;
     padding-right: 55px;
+}
+.align{
+    text-align: right;
 }
