@@ -1,0 +1,64 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="New prototype" %}
+
+{% block content %}
+<main id="content" role="main">
+	<div class="govuk-grid-row">
+
+		<div class="govuk-grid-column-one-third govuk-!-padding-top-8">
+			<span class="govuk-body govuk-!-font-weight-bold">Standard GDS components
+            </span>
+			<nav class="app-subnav">
+				<ul class="app-subnav__section">
+					<li class="app-subnav__section-item">
+						<a class="app-subnav__link" href="accordion">Accordion</a>
+					</li>
+					<li class="app-subnav__section-item">
+						<a class="app-subnav__link" href="back-to-top-link">Back to top link</a>
+					</li>
+					<li class="app-subnav__section-item">
+						<a class="app-subnav__link" href="links">Links</a>
+					</li>
+					
+					<li class="app-subnav__section-item">
+						<a class="app-subnav__link" href="tag">Tag</a>
+					</li>
+				</ul>
+			</nav>
+<!-- non standard -->
+            <span class="govuk-body govuk-!-font-weight-bold">Non-standard GDS components
+            </span>
+            <nav class="app-subnav">
+                <ul class="app-subnav__section">
+                    <li class="app-subnav__section-item">
+                        <a class="app-subnav__link" href="accordion">Radio comparison feature</a>
+                    </li>
+                    <li class="app-subnav__section-item">
+                        <a class="app-subnav__link" href="back-to-top-link">Variance indicators</a>
+                    </li>
+                    <li class="app-subnav__section-item">
+                        <a class="app-subnav__link" href="card">Dashboard tile cards</a>
+                    </li>
+                    <li class="app-subnav__section-item">
+                        <a class="app-subnav__link" href="icons">Icons</a>
+                    </li>
+                </ul>
+            </nav>
+
+		</div>
+		<div class="govuk-grid-column-one-half">
+			
+			<div class=" govuk-!-padding-top-6">
+				<h1 class="govuk-heading-l">
+                   Component library
+                  </h1>
+			</div>
+            <p>Components are reusable parts of the user interface that have been used in the design of the <abbr title="Manage your education and skills funding">MYESF</abbr> service, sub services and features.</p>
+            <p>All of the listed components are made up from the <a href="https://design-system.service.gov.uk/" class="govuk-link" rel="noreferrer noopener" target="_blank">GOV.UK Design System (opens in new tab)</a> styles, patterns and components. 
+           
+        </div>
+    </div>
+</main>
+
+{% endblock %}
