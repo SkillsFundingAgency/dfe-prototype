@@ -1,0 +1,65 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="New prototype" %}
+
+{% block content %}
+<main id="content" role="main">
+	<div class="govuk-grid-row">
+
+		<div class="govuk-grid-column-one-third govuk-!-padding-top-8">
+			<span class="govuk-body govuk-!-font-weight-bold">Standard GDS components
+            </span>
+			<nav class="app-subnav">
+				<ul class="app-subnav__section">
+					<li class="app-subnav__section-item">
+						<a class="app-subnav__link" href="accordion">Accordion</a>
+					</li>
+					<li class="app-subnav__section-item">
+						<a class="app-subnav__link" href="back-to-top-link">Back to top link</a>
+					</li>
+					<li class="app-subnav__section-item">
+						<a class="app-subnav__link" href="links">Links</a>
+					</li>
+					
+					<li class="app-subnav__section-item">
+						<a class="app-subnav__link" href="tag">Tag</a>
+					</li>
+				</ul>
+			</nav>
+<!-- non standard -->
+            <span class="govuk-body govuk-!-font-weight-bold">Non-standard GDS components
+            </span>
+            <nav class="app-subnav">
+                <ul class="app-subnav__section">
+                    <li class="app-subnav__section-item">
+                        <a class="app-subnav__link" href="accordion">Radio comparison feature</a>
+                    </li>
+                    <li class="app-subnav__section-item">
+                        <a class="app-subnav__link" href="back-to-top-link">Variance indicators</a>
+                    </li>
+                    <li class="app-subnav__section-item">
+                        <a class="app-subnav__link" href="card">Dashboard tile cards</a>
+                    </li>
+                    <li class="app-subnav__section-item">
+                        <a class="app-subnav__link" href="icons">Icons</a>
+                    </li>
+                </ul>
+            </nav>
+
+		</div>
+		<div class="govuk-grid-column-one-half">
+			
+			<div class=" govuk-!-padding-top-6">
+				<h1 class="govuk-heading-l">
+                   Component library
+                  </h1>
+			</div>
+            <div class="app-prose-scope">
+				<p>The accordion component lets users show and hide sections of related content on a page.</p>
+			</div>	
+           
+        </div>
+    </div>
+</main>
+
+{% endblock %}
