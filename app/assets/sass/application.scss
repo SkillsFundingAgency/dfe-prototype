@@ -326,12 +326,8 @@ span.has-email-alerts span.text {
 .heading-space{
     padding-top:40px;
 }
-.margin-left{
-    padding-left:380px;
-}
-.space-left{
-    padding-left:20px;
-}
+
+
 .text-space{
     padding-left:375px;
     padding-top:0px;
@@ -460,6 +456,7 @@ td .variance-text {
 {
     width:8%;
     height:8%;
+    
 }
 .float-right
 {
@@ -472,4 +469,8 @@ td .variance-text {
 }
 .align{
     text-align: right;
+}
+.govuk-width-container
+{
+    max-width: 60%;
 }
