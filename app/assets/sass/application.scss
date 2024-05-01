@@ -90,7 +90,7 @@ a:visited {
     font-size: 16px;
     font-weight: bold;
 	line-height: 24px;
-    color: #003078;
+    color: black;
     margin: 15px 0px 10px;
 }
 
@@ -318,11 +318,6 @@ span.has-email-alerts span.text {
 .govuk-main-wrapper{
     padding-top:4px;
 }
-.heading-space{
-    padding-top:40px;
-}
-
-
 .text-space{
     padding-left:375px;
     padding-top:0px;
@@ -353,51 +348,17 @@ span.has-email-alerts span.text {
 	margin: 0px;
 	padding: 0px;
 }
-.text-align-right
-{
-    float:right;
-    padding-right:80px;
-}
-.text-spaces
-{
- float:right;
- padding-right:123px;
-}
 .text-space
 {
  float:right;
  padding-right:73px;
 }
-.amount
-{
- padding-left:443px;
-}
-.value{
-    padding-left:438px;
-}
-.value-align
-{
- float:right;
- padding-right:95px;
-}
-.total-amount{
-    padding-left:410px;
-}
+
 .total-value
 {
     float:right;
  padding-right:68px;
 }
-.right-align
-{
-    float:right;
-    padding-right:228px;
-}
-.text-align{
-    
-    padding-left:37.5rem;
-}
-
 .print{
     width:46px;
     height:46px;
@@ -453,23 +414,11 @@ td .variance-text {
     height:8%;
     
 }
-.float-right
-{
-    padding-left:390px;
-}
-.total-grant
-{
-    float:right;
-    padding-right: 55px;
-}
+
 .align{
     text-align: right;
 }
 .govuk-width-container
 {
-    max-width: 80%;
-}
-.phase-banner
-{
-    padding-left:25px;
+    max-width: 73%;
 }
