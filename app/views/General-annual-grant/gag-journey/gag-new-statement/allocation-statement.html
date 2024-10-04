@@ -1,0 +1,73 @@
+{% extends "layouts/main.html" %}
+ 
+{% set pageName="Allocation-statement" %}
+ 
+{% block content %}
+<!-- Phase banner -->
+ <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+        <span class="govuk-phase-banner__text">The Dochester Academy(UKPRN:12345678) </span>
+        <span class="govuk-link margin-left"><a href="view-your-roles">View your sub-services</a></span>
+        <span class="govuk-link space-left"><a href="#">Sign out</a></span>
+    </p>
+ </div>
+<!-- Pahse banner end -->
+<div class="govuk-width-container">
+    <div class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="../start.html">Home</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item">
+            Your allocation statements
+          </li>
+        </ol>
+      </div>
+    <main class="govuk-main-wrapper heading-space">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+            <div class="govuk-accordion__section">
+              <div class="govuk-accordion__section-header">
+                <h2 class="govuk-accordion__section-heading">
+                  <a class="govuk-accordion__heading-text-left govuk-accordion__section-button " id="accordion-default-heading-1">
+                    General annual grant(GAG):academic year (AY) 2024 to 2025 
+                    <span class="govuk-accordion__heading-number-right ">£6,284,448.46</span>
+                    <span class="govuk-caption-m govuk-main-wrapper">Published: xyz 
+                    <strong class="govuk-tag govuk-tag--blue"> New
+                    </strong>
+                    </span> 
+                  </a>
+                </h2>
+              </div>
+              <div id="accordion-default-content-1" class="govuk-accordion__section-content">
+                <h2 class="govuk-heading-s">Funding breakdown</h2>
+                <p class="govuk-body">
+                  <a href="gag-new-statement#sb" class="govuk-link">School budget share</a>
+                  <span class="govuk-accordion__heading-number-right">£x,xxx,xxx</span>
+                </p>
+                <p class="govuk-body">
+                  <a href="gag-new-statement#mfg" class="govuk-link">Minimum funding guarantee</a>
+                  <span class="govuk-accordion__heading-number-right">£x,xxx,xxx</span>
+                </p>
+                <p class="govuk-body">
+                  <a href="gag-new-statement#sg" class="govuk-link">Start-up grant</a>
+                  <span class="govuk-accordion__heading-number-right">£x,xxx,xxx</span>
+                </p>
+                <h2 class="govuk-heading-s">Allocation history</h2>
+                <p class="govuk-body">
+                  <a href="allocation-history.html" class="govuk-link">View history of allocation funding</a>
+                </p>
+
+                <h2 class="govuk-heading-s">Explore the topic</h2>
+                <p class="govuk-body">
+                  <a href="#" class="govuk-link">General annual grant allocation guides:2024 to 2025(opens in new tab)</a>
+                </p>
+              </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+{% endblock %}

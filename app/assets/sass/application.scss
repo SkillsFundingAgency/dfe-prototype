@@ -4,6 +4,13 @@
 // 
 
 // Add extra styles here
+//
+// For guidance on how to add CSS and SCSS see:
+// https://prototype-kit.service.gov.uk/docs/adding-css-javascript-and-images
+// 
+
+// Add extra styles here
+//Dashboard styles
 .dashboard-item {
 	height:220px;
 }
@@ -91,7 +98,7 @@ a:visited {
     font-weight: bold;
 	line-height: 24px;
     color: black;
-    margin: 15px 0px 10px;
+     margin: 15px 0px 10px;
 }
 
 .alert-wrap p {
@@ -318,13 +325,10 @@ span.has-email-alerts span.text {
 .govuk-main-wrapper{
     padding-top:4px;
 }
-.text-space{
-    padding-left:375px;
-    padding-top:0px;
-}
+
 
 .padding-left{
-    padding-left:160px;
+    padding-left:140px;
 }
 .govuk-accordion__heading-number-right {
 	margin: 0px;
@@ -342,23 +346,18 @@ span.has-email-alerts span.text {
 		display: none;
 	}
 }
-.govuk-accordion__heading-text-left {
-	float: left;
-	width: 66.66667%;
-	margin: 0px;
-	padding: 0px;
-}
-.text-space
-{
- float:right;
- padding-right:73px;
-}
 
 .total-value
 {
     float:right;
- padding-right:68px;
+ padding-right:65px;
 }
+
+.text-align{
+    text-align: right;
+    padding-left: 80px;
+}
+
 .print{
     width:46px;
     height:46px;
@@ -369,12 +368,10 @@ span.has-email-alerts span.text {
 	font-size: 80%;
 	margin-top: 0px;
     vertical-align: middle;
-   
 }
 h2 .variance-text {
 	font-size: 80% !important;
     color:#d4351c;
-    
 }
 td .variance-text {
 	font-size: 80% !important;
@@ -386,7 +383,7 @@ td .variance-text {
 }
 .app-c-back-to-top__icon {
     display: inline-block;
-    width: 1em;
+    width: .8em;
     height: 1em;
     margin-top: -5px;
     margin-right: 0px;
@@ -416,11 +413,9 @@ td .variance-text {
     height:8%;
     
 }
-
 .align{
     text-align: right;
 }
-.govuk-width-container
-{
-    max-width: 73%;
+.column-width{
+    width:40%;
 }
