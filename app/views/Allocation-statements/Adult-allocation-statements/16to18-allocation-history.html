@@ -1,0 +1,122 @@
+{% extends "layouts/main.html" %}
+ 
+{% set pageName="Allocation history" %}
+ 
+{% block content %}
+<!-- Phase banner -->
+<div class="govuk-phase-banner">
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <p class="govuk-phase-banner__content">
+            <span class="govuk-phase-banner__text">Viewing as Trn (Train) Ltd. (UKPRN: 10000082) </span>
+          </p>
+        </div>
+        <div class="govuk-grid-column-one-third">
+          <p class="govuk-phase-banner__content">
+            <span class="govuk-link govuk-!-padding-right-6"><a href="view-your-roles">View your sub-services</a></span>
+            <span class="govuk-link"><a href="#" >Sign out</a></span>
+          </p>
+        </div>
+    </div>
+   </div>
+<!-- Pahse banner end -->
+    <div class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="./allocation-dashboard.html">Home</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="./choose-statement-type.html">Choose a statement type</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="./statement-list-page.html">19+ Allocation statements</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item">Allocation history
+          </ol>
+    </div>
+    <main class="govuk-main-wrapper">
+      <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+            <h1 class="govuk-heading-l govuk-!-padding-top-6"><span class="govuk-caption-xl">16 to 18 traineeships</span>Allocation history</h1>
+            <p class="govuk-body">View detailed breakdowns of 16 to 18 traineeships for each academic year.</p>
+            </div>
+      </div>
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+                <table class="govuk-table">
+                    <caption class="govuk-table__caption govuk-table__caption--m">AY 2024 to 2025</caption>
+                    <thead class="govuk-table__head">
+                      <tr class="govuk-table__row">
+                        <th scope="col" class="govuk-table__header">Publication date</th>
+                        <th scope="col" class="govuk-table__header">Description</th>
+                      </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header govuk-!-font-weight-regular"><a class="govuk-link" href="#" >xxx </a> 
+                          <strong class="govuk-tag">
+                            Latest
+                          </strong></th>
+                        <td class="govuk-table__cell">xxxx</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header govuk-!-font-weight-regular"><a class="govuk-link" href="#" >xxx</a></th>
+                        <td class="govuk-table__cell">xxx</td>
+                      </tr>                   
+                    </tbody>
+                </table>
+                <table class="govuk-table">
+                  <caption class="govuk-table__caption govuk-table__caption--m">AY 2023 to 2024</caption>
+                  <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                      <th scope="col" class="govuk-table__header">Publication date</th>
+                      <th scope="col" class="govuk-table__header">Description</th>
+                    </tr>
+                  </thead>
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header govuk-!-font-weight-regular"><a class="govuk-link" href="#" >xxx </a></th>
+                      <td class="govuk-table__cell">xxxx</td>
+                    </tr>
+                  </tbody>
+              </table>
+              <table class="govuk-table">
+                <caption class="govuk-table__caption govuk-table__caption--m">AY 2022 to 2023</caption>
+                <thead class="govuk-table__head">
+                  <tr class="govuk-table__row">
+                    <th scope="col" class="govuk-table__header">Publication date</th>
+                    <th scope="col" class="govuk-table__header">Description</th>
+                  </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header govuk-!-font-weight-regular"><a class="govuk-link" href="#" >xxx </a> </th>
+                    <td class="govuk-table__cell">xxxx</td>
+                  </tr>
+                </tbody>
+            </table>
+            <table class="govuk-table">
+              <caption class="govuk-table__caption govuk-table__caption--m">AY 2021 to 2022</caption>
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header">Publication date</th>
+                  <th scope="col" class="govuk-table__header">Description</th>
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header govuk-!-font-weight-regular"><a class="govuk-link" href="#" >xxx </a> </th>
+                  <td class="govuk-table__cell">xxxx</td>
+                </tr>
+              </tbody>
+          </table>
+            </div>
+          </div>
+        <h1 class="govuk-heading-l">Previous years</h1>
+        <p class="govuk-body">You can view older allocation statements in <a href='#' class="govuk-link">Document Exchange (opens in new tab)</a></p>
+        </div>
+      </div>
+    </main>
+{% endblock %}

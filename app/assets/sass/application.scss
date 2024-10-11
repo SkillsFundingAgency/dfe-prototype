@@ -1,15 +1,7 @@
-//
 // For guidance on how to add CSS and SCSS see:
 // https://prototype-kit.service.gov.uk/docs/adding-css-javascript-and-images
 // 
 
-// Add extra styles here
-//
-// For guidance on how to add CSS and SCSS see:
-// https://prototype-kit.service.gov.uk/docs/adding-css-javascript-and-images
-// 
-
-// Add extra styles here
 //Dashboard styles
 .dashboard-item {
 	height:220px;
@@ -413,9 +405,40 @@ td .variance-text {
     height:8%;
     
 }
+.button-align
+{
+      float:right;
+}
 .align{
     text-align: right;
 }
 .column-width{
     width:40%;
+}
+.pager {
+	font-size: 16px;
+	margin-top: 1em;
+	margin-bottom: 1.25em;
+}
+.form-block {
+    float: left;
+    width: 104%;
+    margin-top: 0px;
+    margin-bottom: 5px;
+   }
+
+.filter {
+	border: 2px solid #dee0e2;
+	margin-bottom: 20px;
+   
+}
+   .filters-headings {
+    clear: both;
+    background: #dee0e2;
+    box-sizing:content-box;
+    display: block;
+    width: 85%;
+    padding: 20px 30px 1px 15px;
+    
+    text-align: left;
 }

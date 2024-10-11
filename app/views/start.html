@@ -1,40 +1,36 @@
 {% extends "layouts/main.html" %}
 
-{% set pageName="New prototype" %}
+{% set pageName="Home" %}
 
 {% block content %}
-<!-- New Prototype start page -->
-<main id="content" role="main">
-	<div class="">
-		<a href="../../index.html" class="govuk-back-link">Back</a>
-	</div>
-	
-	<div class="grid-row  govuk-!-padding-top-8">
-		<div class="column-full">
-			<!-- USER JOURNEYS -->
-			
-            <div class="form-block">
-				<h1 class="govuk-heading-l">
-					Signed-in
-			    </h1>
-			</div>
-			<div class="form-block">
-				<h1 class="govuk-heading-m">
-					Allocation statements
-			    </h1>
-				<div class="govuk-body">
-					<ul class="govuk-list govuk-list--bullet">
-						<!-- <li><a class="govuk-link" href="./General-annual-grant/gag-journey/gag-new-statement/dashboard-new-statement.html"><span class="bold-medium"><abbr title="General annual grant">GAG</abbr> child view (academy, <abbr title="Single academy trust">SAT</abbr>)</span></a> <strong class="govuk-tag govuk-tag--blue">
-							New
-						  </strong></li> -->
-						  <li><a class="govuk-link" href="sign-in1.html">1st Indicative statement (all tabs) no variance</a></li>
-						  <li><a class="govuk-link" href="sign-in2.html">2nd Indicative statement (all tabs) - With comparison feature</a></li>
-						  <li><a class="govuk-link" href="./General-annual-grant/dashboard-First-IYO.html">First and Second final IYO GAG - No variance</a></li>
-						  <!--<li><a class="govuk-link" href="./General-annual-grant/dashboard-Second-IYO.html">Final 2nd year opener GAG - No variance</a></li>-->
-						</ul>	
-				</div>	
-		    </div>
-		</div>	
-    </div>
-</main>
+
+<div class="govuk-grid-row ">
+  <div class="govuk-grid-column-full">
+            <h1 class="govuk-heading-xl govuk-!-padding-top-8">
+				Signed-in
+            </h1>
+			<h1 class="govuk-heading-l">
+				Allocation statements
+			</h1>
+			<h2 class="govuk-heading-m">
+				GAG IYO statement
+			</h2>
+			<div class="govuk-body">
+				<ul class="govuk-list govuk-list--bullet">
+					  <li><a class="govuk-link" href="sign-in1.html">1st Indicative statement (all tabs) no variance</a></li>
+					  <li><a class="govuk-link" href="sign-in2.html">2nd Indicative statement (all tabs) - With comparison feature</a></li>
+					  <li><a class="govuk-link" href="./General-annual-grant/dashboard-First-IYO.html">First and Second final IYO GAG - No variance</a></li>
+					</ul>	
+			</div>	
+			<h2 class="govuk-heading-m">
+				19+ Allocation statement (Under development)
+			</h2>
+			<div class="govuk-body">
+				<ul class="govuk-list govuk-list--bullet">
+					  <li><a class="govuk-link" href="./Allocation-statements/Adult-allocation-statements/statement-list-page.html">Statement list page </a></li>
+					</ul>	
+			</div>	
+             
+  </div>
+</div>
 {% endblock %}
