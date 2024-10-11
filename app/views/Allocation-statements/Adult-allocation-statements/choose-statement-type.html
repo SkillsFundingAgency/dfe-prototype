@@ -1,0 +1,65 @@
+{% extends "layouts/main.html" %}
+ 
+{% set pageName="Choose a statement type" %}
+ 
+{% block content %}
+<!-- Phase banner -->
+<div class="govuk-phase-banner">
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <p class="govuk-phase-banner__content">
+            <span class="govuk-phase-banner__text">Viewing as Trn (Train) Ltd. (UKPRN: 10000082) </span>
+          </p>
+        </div>
+        <div class="govuk-grid-column-one-third">
+          <p class="govuk-phase-banner__content">
+            <span class="govuk-link govuk-!-padding-right-6"><a href="view-your-roles">View your sub-services</a></span>
+            <span class="govuk-link"><a href="#" >Sign out</a></span>
+          </p>
+        </div>
+    </div>
+   </div>
+<!-- Pahse banner end -->
+    <div class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+            <li class="govuk-breadcrumbs__list-item">
+                <a class="govuk-breadcrumbs__link" href="./allocation-dashboard.html">Home</a>
+              </li>
+              <li class="govuk-breadcrumbs__list-item">  Choose a statement type
+              </li>
+          </ol>
+    </div>
+    <main class="govuk-main-wrapper">
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+                  <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset">
+                      <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                        <h1 class="govuk-fieldset__heading govuk-!-padding-top-8">
+                            Which type of statements would you like to view?
+                        </h1>
+                      </legend>
+                      <div class="govuk-radios govuk-!-padding-top-6" data-module="govuk-radios">
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="whereDoYouLive" name="whereDoYouLive" type="radio" value="england">
+                          <label class="govuk-label govuk-radios__label" for="whereDoYouLive">
+                            Pre-16 and 16 to 19
+                          </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="whereDoYouLive-2" name="whereDoYouLive" type="radio" value="scotland">
+                          <label class="govuk-label govuk-radios__label" for="whereDoYouLive-2">
+                            19+ <strong class="govuk-tag govuk-tag--blue"> 1 New statement</strong>
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                  <a type="button" class="govuk-button" data-module="govuk-button" href="statement-list-page.html" >
+                    Continue
+                  </a>
+            </div>
+        </div>
+        
+    </main>
+{% endblock %}

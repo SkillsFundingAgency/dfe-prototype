@@ -1,0 +1,265 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Allocation-statement" %}
+
+{% block content %}
+<!-- Phase banner -->
+<div class="govuk-phase-banner">
+  <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <p class="govuk-phase-banner__content">
+          <span class="govuk-phase-banner__text">Viewing as Trn (Train) Ltd. (UKPRN: 10000082) </span>
+        </p>
+      </div>
+      <div class="govuk-grid-column-one-third">
+        <p class="govuk-phase-banner__content">
+          <span class="govuk-link govuk-!-padding-right-4"><a href="view-your-roles">View your sub-services</a></span>
+          <span class="govuk-link"><a href="#" >Sign out</a></span>
+        </p>
+      </div>
+  </div>
+ </div>
+<!-- Pahse banner end -->
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="./allocation-dashboard.html">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="./choose-statement-type.html">Choose a statement type</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">19+ Allocation statements</li>
+    </ol>
+  </div>
+
+  <h1 class="govuk-heading-xl govuk-!-padding-top-6">19+ Allocation statements</h1>
+
+    <main class="govuk-main-wrapper">
+        <div class="govuk-grid-row">
+            <!--Filter view-->
+            <div class="govuk-grid-column-one-third govuk-!-padding-top-2">
+                  <div class="form-block">
+                    <div class="filters-headings">
+                        <h2 class="govuk-heading-s">Filter by type</h2>
+                    </div> 
+                    <fieldset class="filter">
+                        <legend class="govuk-visually-hidden">Filter by type</legend>
+                            <section id="type-link-filter" >
+                                <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                                    <div class="govuk-checkboxes__item">
+                                      <input class="govuk-checkboxes__input" id="queryFilterType01" name="queryFilterType01" type="checkbox" value="queryFilterType01">
+                                      <label class="govuk-label govuk-checkboxes__label" for="queryFilterType01">
+                                        16 to 18 traineeships
+                                      </label>
+                                    </div>
+                                    <div class="govuk-checkboxes__item">
+                                        <input class="govuk-checkboxes__input" id="queryFilterType02" name="queryFilterType02" type="checkbox" value="queryFilterType02">
+                                        <label class="govuk-label govuk-checkboxes__label" for="queryFilterType02">
+                                            19 to 24 traineeships
+                                        </label>
+                                      </div>
+                                    <div class="govuk-checkboxes__item">
+                                      <input class="govuk-checkboxes__input" id="queryFilterType03" name="queryFilterType03" type="checkbox" value="queryFilterType03">
+                                      <label class="govuk-label govuk-checkboxes__label" for="queryFilterType03">
+                                        Advanced learner loans
+                                      </label>
+                                    </div>
+                                    <div class="govuk-checkboxes__item">
+                                      <input class="govuk-checkboxes__input" id="queryFilterType04" name="queryFilterType04" type="checkbox" value="queryFilterType04">
+                                      <label class="govuk-label govuk-checkboxes__label" for="queryFilterType04">
+                                        Apprenticeship carry-in
+                                      </label>
+                                    </div>
+                                    <div class="govuk-checkboxes__item">
+                                        <input class="govuk-checkboxes__input" id="queryFilterType05" name="queryFilterType05" type="checkbox" value="queryFilterType05">
+                                        <label class="govuk-label govuk-checkboxes__label" for="queryFilterType05">
+                                            ESFA funded adult education budget
+                                        </label>
+                                      </div>
+                                      <div class="govuk-checkboxes__item">
+                                        <input class="govuk-checkboxes__input" id="queryFilterType06" name="queryFilterType06" type="checkbox" value="queryFilterType06">
+                                        <label class="govuk-label govuk-checkboxes__label" for="queryFilterType06">
+                                            Non-levy apprenticeship
+                                        </label>
+                                      </div>
+                                  </div>
+                            </section>
+                    </fieldset>
+                </div>
+                <p class="govuk-body">
+                     <a href="#" class="govuk-link" id="clearFilters">Clear filters</a>
+                 </p>
+            </div>
+            <!--Filter view end-->
+            <!-- statement list view -->
+            <div class="govuk-grid-column-two-thirds">
+                <div class="govuk-grid-row">
+                    <div class="govuk-grid-column-full">
+                        <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+                            <!--16 to 18 traineeships -->
+                                <div class="govuk-accordion__section queryFilterType01">
+                                    <div class="govuk-accordion__section-header">
+                                        <h2 class="govuk-accordion__section-heading">
+                                        <a class="govuk-accordion__heading-text-left govuk-accordion__section-button" id="accordion-default-heading-1">
+                                            16 to 18 traineeships for 2024 to 2025
+                                            <span class="govuk-accordion__heading-number-left" style="float: right;">£x,xxx.xx</span>
+                                            <span class="govuk-caption-m govuk-main-wrapper">Published: 01 January 2024. Version 1
+                                            <strong class="govuk-tag govuk-tag--blue"> New
+                                            </strong>
+                                            </span> 
+                                        </a>
+                                        </h2>
+                                    </div>
+                                    <div id="accordion-default-content-1" class="govuk-accordion__section-content">
+                                    <h2 class="govuk-heading-s">Allocation history</h2>
+                                    <p class="govuk-body">
+                                        <a href="./16to18-allocation-history.html" class="govuk-link">View history of allocated funding</a>
+                                    </p>
+                                    <h2 class="govuk-heading-s">Explore the topic</h2>
+                                    <p class="govuk-body">
+                                        <a href="#" class="govuk-link" target="_blank">16 to 18 traineeships guides : 2024 to 2025</a>
+                                    </p>
+                                    </div>         
+                                </div>
+                                <!--19 to 24 traineships-->
+                                <div class="govuk-accordion__section queryFilterType02">
+                                    <div class="govuk-accordion__section-header">
+                                        <h2 class="govuk-accordion__section-heading">
+                                            <a class="govuk-accordion__heading-text-left govuk-accordion__section-button" id="accordion-default-heading-2">
+                                            19 to 24 traineships for 2024 to 2025
+                                            <span class="govuk-accordion__heading-number-left" style="float: right;">£x,xxx.xx</span>
+                                            <span class="govuk-caption-m govuk-main-wrapper">Published: 01 January 2024. Version 1
+                                            </span> 
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div id="accordion-default-content-1" class="govuk-accordion__section-content">
+                                        <h2 class="govuk-heading-s">Allocation history</h2>
+                                        <p class="govuk-body">
+                                            <a href="./19to24-allocation-history.html" class="govuk-link">View history of allocated funding</a>
+                                        </p>          
+                                        <h2 class="govuk-heading-s">Explore the topic</h2>
+                                        <p class="govuk-body">
+                                            <a href="" target=”_blank” class="govuk-link">19 to 24 traineships guides : 2024 to 2025</a>
+                                        </p>
+                                    </div> 
+                                </div>
+                                <!-- Advanced learner loans-->
+                                <div class="govuk-accordion__section queryFilterType03">
+                                    <div class="govuk-accordion__section-header">
+                                    <h2 class="govuk-accordion__section-heading">
+                                        <a class="govuk-accordion__heading-text-left govuk-accordion__section-button " id="accordion-default-heading-3">
+                                            Advanced learner loans for 2024 to 2025
+                                        <span class="govuk-accordion__heading-number-left" style="float: right;">£x,xxx.xx</span>
+                                        <span class="govuk-caption-m govuk-main-wrapper">Published: 01 January 2024. Version 1 
+                                        </span> 
+                                        </a>
+                                    </h2>
+                                    </div>
+                                    <div id="accordion-default-content-1" class="govuk-accordion__section-content">
+                                        <h2 class="govuk-heading-s">Allocation history</h2>
+                                        <p class="govuk-body">
+                                            <a href="./advanced-learner-loans-history.html" class="govuk-link">View history of allocated funding</a>
+                                        </p>          
+                                        <h2 class="govuk-heading-s">Explore the topic</h2>
+                                        <p class="govuk-body">
+                                            <a href="" target=”_blank” class="govuk-link">Advanced learner loans guides : 2024 to 2025</a>
+                                        </p>
+                                    </div> 
+                                </div>
+                                <!---->
+                                <!-- Apprenticeship carry-in-->
+                                <div class="govuk-accordion__section queryFilterType04">
+                                    <div class="govuk-accordion__section-header">
+                                    <h2 class="govuk-accordion__section-heading">
+                                        <a class="govuk-accordion__heading-text-left govuk-accordion__section-button " id="accordion-default-heading-4">
+                                        Apprenticeship carry-in for 2024 to 2025
+                                        <span class="govuk-accordion__heading-number-left" style="float: right;">£x,xxx.xx</span>
+                                        <span class="govuk-caption-m govuk-main-wrapper">Published: 01 January 2024. Version 1 
+                                        </span> 
+                                        </a>
+                                    </h2>
+                                    </div>
+                                    <div id="accordion-default-content-1" class="govuk-accordion__section-content">
+                                    <h2 class="govuk-heading-s">Allocation history</h2>
+                                        <p class="govuk-body">
+                                            <a href="./apprenticeship-carry-in-history.html" class="govuk-link">View history of allocated funding</a>
+                                        </p>          
+                                        <h2 class="govuk-heading-s">Explore the topic</h2>
+                                        <p class="govuk-body">
+                                            <a href="" target=”_blank” class="govuk-link">Apprenticeship carry-in guides : 2024 to 2025</a>
+                                        </p>
+                                    </div> 
+                                </div>
+                                <!--ESFA funded adult education-->
+                                <div class="govuk-accordion__section queryFilterType05">
+                                    <div class="govuk-accordion__section-header">
+                                    <h2 class="govuk-accordion__section-heading">
+                                        <a class="govuk-accordion__heading-text-left govuk-accordion__section-button " id="accordion-default-heading-5">
+                                        ESFA funded adult education budget for 2024 to 2025
+                                        <span class="govuk-accordion__heading-number-left" style="float: right;">£x,xxx.xx</span>
+                                        <span class="govuk-caption-m govuk-main-wrapper">Published: 01 January 2024. Version 1 
+                                        </span> 
+                                        </a>
+                                    </h2>
+                                    </div>
+                                    <div id="accordion-default-content-1" class="govuk-accordion__section-content">
+                                        <h2 class="govuk-heading-s">Allocation history</h2>
+                                        <p class="govuk-body">
+                                            <a href="./esfa-funded-adult-education-history.html" class="govuk-link">View history of allocated funding</a>
+                                        </p>          
+                                        <h2 class="govuk-heading-s">Explore the topic</h2>
+                                        <p class="govuk-body">
+                                            <a href="" target=”_blank” class="govuk-link">ESFA funded adult education budget guides : 2024 to 2025</a>
+                                        </p>
+                                    </div> 
+                                </div>
+                                <!--Non-levy apprenticeships-->
+                                    <div class="govuk-accordion__section queryFilterType06">
+                                        <div class="govuk-accordion__section-header">
+                                        <h2 class="govuk-accordion__section-heading">
+                                            <a class="govuk-accordion__heading-text-left govuk-accordion__section-button " id="accordion-default-heading-6">
+                                            Non-levy apprenticeships for 2024 to 2025
+                                            <span class="govuk-accordion__heading-number-left" style="float: right;">£x,xxx.xx</span>
+                                            <span class="govuk-caption-m govuk-main-wrapper">Published: 01 January 2024. Version 1 
+                                            </span> 
+                                            </a>
+                                        </h2>
+                                        </div>
+                                        <div id="accordion-default-content-1" class="govuk-accordion__section-content">
+                                            <h2 class="govuk-heading-s">Allocation history</h2>
+                                            <p class="govuk-body">
+                                                <a href="./nonlevy-apprenticeships-history.html" class="govuk-link">View history of allocated funding</a>
+                                            </p>          
+                                            <h2 class="govuk-heading-s">Explore the topic</h2>
+                                            <p class="govuk-body">
+                                                <a href="" target=”_blank” class="govuk-link">Non-levy apprenticeships guides : 2024 to 2025</a>
+                                            </p>
+                                        </div> 
+                                    </div>
+                        </div>
+                    </div>
+                     <!--Pagination-->
+                    <div class="govuk-pagination__next">
+                        <span class="govuk-pagination__link-title" id="pagination-info">
+                            Showing 1 to 6 of 6 allocation statements
+                        </span>
+                    </div>
+                    <div class="app-back-to-top app-back-to-top--fixed  button-align" data-module="app-back-to-top">
+                        <a class="govuk-link govuk-link--no-visited-state app-back-to-top__link" href="#top">
+                          <svg role="presentation" focusable="false" class="app-back-to-top__icon govuk-!-padding-top-8" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17">
+                            <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
+                          </svg>Back to top
+                        </a>
+                      </div>
+                <!---->
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}
+
+<script>
+ 
+
+</script>
