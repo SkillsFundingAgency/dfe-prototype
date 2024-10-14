@@ -422,7 +422,7 @@ td .variance-text {
 }
 .form-block {
     float: left;
-    width: 104%;
+    width: 102%;
     margin-top: 0px;
     margin-bottom: 5px;
    }
@@ -437,8 +437,13 @@ td .variance-text {
     background: #dee0e2;
     box-sizing:content-box;
     display: block;
-    width: 85%;
+    width: 87%;
     padding: 20px 30px 1px 15px;
-    
     text-align: left;
+}
+
+
+.govuk-width-container {
+    max-width: 60%;
+    
 }
