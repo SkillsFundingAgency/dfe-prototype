@@ -1,0 +1,83 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Sign your contract" %}
+
+{% block beforeContent %}
+<!-- Phase banner -->
+<div class="govuk-phase-banner">
+  <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <p class="govuk-phase-banner__content">
+          <span class="govuk-phase-banner__text">Viewing as Trn (Train) Ltd. (UKPRN: 10000082) </span>
+        </p>
+      </div>
+      <div class="govuk-grid-column-one-third">
+        <p class="govuk-phase-banner__content">
+          <span class="govuk-link govuk-!-padding-right-4"><a href="view-your-roles">View your sub-services</a></span>
+          <span class="govuk-link"><a href="#" >Sign out</a></span>
+        </p>
+      </div>
+  </div>
+ </div>
+<!-- Pahse banner end -->
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="../dashboard.html">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="../list-view.html">Contracts and agreements</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="review-contract.html">Review your contract</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">Sign your contract
+      </li>
+    </ol>
+  </div>
+  {% endblock %}
+
+  {% block content %}
+
+    <main class="govuk-main-wrapper">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-full">
+            <h1 class="govuk-caption-l govuk-!-padding-top-6"> Higher technical education provider growth fund AY 2024 to 2025.<span class="govuk-!-font-weight-bold"> Version 1</span>
+              <strong class="govuk-tag govuk-tag--blue govuk-!-padding-left-2">
+                Ready to sign
+              </strong> </h1>
+              <h1 class="govuk-heading-l  govuk-!-padding-bottom-6">Sign your contract</h1>
+          </div>
+          <div class="govuk-grid-column-full">
+               <p class="govuk-body govuk-!-font-size-24 govuk-!-font-weight-bold">By signing you:</p>
+                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+                    <li>confirm that you’ve read and understood all the terms and conditions of the contract and that [Example Organisation name] will be bound to comply with them</li>
+                    <li>confirm that you’re authorised to sign the contract on behalf of [Example Organisation name]</li>
+                    <li>agree that the contract is signed digitally and is legally binding</li>
+                  </ul>
+           </div> 
+          <div class="govuk-grid-column-full  govuk-!-padding-top-6">
+            <a type="submit" href="contract-signed-confirmation.html" class="govuk-button" data-module="govuk-button">
+                    Agree and sign
+            </a>
+          <h2 class="govuk-heading-s  govuk-!-padding-top-4">Contract history</h2>
+            <p class="govuk-body">
+                  <a href="contract-history-page-v1.html" class="govuk-link">View all versions of this contract</a>
+             </p>
+             <h2 class="govuk-heading-s">Explore the topic</h2>
+            <p class="govuk-body">
+              <a href="#" target=”_blank” class="govuk-link"> Higher technical education provider guides: 2024 to 2025 (opens in new tab)</a>
+            </p>
+              <p class="govuk-body">
+              <a href="#" target=”_blank” class="govuk-link">Working with the Department for Education as a provider (opens in new tab)</a>
+
+            </p>
+             <h2 class="govuk-heading-s">Ask for help</h2>
+            <p class="govuk-body">
+                  <a href="../raise-a-query.html" class="govuk-link">Submit a contract query</a>
+             </p>
+             </div>
+        </div>  
+    </main>
+{% endblock %}
+

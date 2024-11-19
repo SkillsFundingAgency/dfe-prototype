@@ -101,3 +101,28 @@ radioButtons.forEach(function(radioButton) {
 //   }); 
 //   }
 // });
+
+//** AG/ Contract query error functionalities */
+ document.getElementById('submitButton').addEventListener('click', function(){
+      let textareaVal = document.getElementById('more-detail').value;
+      let textVal = document.getElementById('contact-by-text').value;
+
+      if(textareaVal == ''){
+        // document.getElementById('textarea').classList.add("govuk-visually-hidden");
+        // document.getElementById('textarea-error').classList.remove("govuk-visually-hidden");
+        // document.getElementById('error1').classList.remove("govuk-visually-hidden");
+        window.location = "raise-a-query-error";
+
+      } else{
+        window.location = "contract-query-confirmation";
+      }
+      // if(textVal == ''){
+      //   document.getElementById('other').classList.add("govuk-visually-hidden");
+      //   document.getElementById('other-reason').classList.remove("govuk-visually-hidden");
+      //   document.getElementById('error').style.dispaly = 'block';
+      //   document.getElementById('error1').classList.add("govuk-visually-hidden");
+      // } else{
+      //   window.location = "contract-query-confirmation";
+      // }
+    });
+//**End */

@@ -2,7 +2,7 @@
  
 {% set pageName="Choose a statement type" %}
  
-{% block content %}
+{% block beforeContent %}
 <!-- Phase banner -->
 <div class="govuk-phase-banner">
     <div class="govuk-grid-row">
@@ -29,7 +29,10 @@
               </li>
           </ol>
     </div>
-    <main class="govuk-main-wrapper">
+    {% endblock %}
+  
+    {% block content %}
+    <main class="govuk-main-wrapper" id='#main-content'>
         <div class="govuk-grid-row">
             <div class="govuk-grid-column-full">
                   <div class="govuk-form-group">
