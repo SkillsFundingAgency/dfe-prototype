@@ -2,7 +2,7 @@
  
 {% set pageName="Allocation history" %}
  
-{% block content %}
+{% block beforeContent %}
 <!-- Phase banner -->
 <div class="govuk-phase-banner">
     <div class="govuk-grid-row">
@@ -34,6 +34,9 @@
           <li class="govuk-breadcrumbs__list-item">Allocation history
           </ol>
     </div>
+    {% endblock %}
+  
+  {% block content %}
     <main class="govuk-main-wrapper">
       <div class="govuk-grid-row">
             <div class="govuk-grid-column-full">

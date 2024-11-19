@@ -2,8 +2,7 @@
 
 {% set pageName="Allocation-statement" %}
 
-{% block content %}
-<!-- Phase banner -->
+{% block beforeContent %}<!-- Phase banner -->
 <div class="govuk-phase-banner">
   <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
@@ -31,7 +30,9 @@
       <li class="govuk-breadcrumbs__list-item">19+ Allocation statements</li>
     </ol>
   </div>
-
+  {% endblock %}
+  
+  {% block content %}
   <h1 class="govuk-heading-xl govuk-!-padding-top-6">19+ Allocation statements</h1>
 
     <main class="govuk-main-wrapper">
