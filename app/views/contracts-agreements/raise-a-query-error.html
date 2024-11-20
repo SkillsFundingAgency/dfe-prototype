@@ -48,6 +48,9 @@
               <div class="govuk-error-summary__body">
                 <ul class="govuk-list govuk-error-summary__list">
                   <li>
+                    <a href="#contract-1">What is your query about</a>
+                  </li>
+                  <li>
                     <a href="#contact-by-text">Tell us your other query reason</a>
                   </li>
                   <li>
@@ -94,14 +97,16 @@
                 </tr>
               </tbody>
             </table>
-            <div class="govuk-form-group govuk-!-padding-top-6" id="form-group">
+            <div class="govuk-form-group govuk-form-group--error govuk-!-padding-top-6" id="form-group">
               <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
                 <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                   <h1 class="govuk-fieldset__heading govuk-!-padding-bottom-2">
                     What is your query about?
                   </h1>
                 </legend>
-                
+                <p id="query-error" class="govuk-error-message">
+                  <span class="govuk-visually-hidden">Error:</span> What is your query about
+                </p>
                 <div class="govuk-radios" data-module="govuk-radios">
                   <div class="govuk-radios__item">
                     <input class="govuk-radios__input" id="contract-1" name="contact" type="radio" value="england">
@@ -132,7 +137,6 @@
                       <input class="govuk-input govuk-!-width-one-third govuk-input--error" id="contact-by-text" name="contactByText" type="tel" spellcheck="false" aria-describedby="contact-by-email-error"  autocomplete="tel">
                     </div>
                   </div> 
-                  
               </fieldset>
             </div>
           </div>
@@ -148,9 +152,9 @@
               <textarea class="govuk-textarea govuk-textarea--error" id="more-detail" name="moreDetail" rows="5" aria-describedby="more-detail-hint more-detail-error"></textarea>
             </div>
 
-            <button type="submit" class="govuk-button" id="submitButton" data-module="govuk-button">
+            <a type="submit" class="govuk-button" href="contract-query-confirmation.html" id="submitButton" data-module="govuk-button">
               Submit
-            </button>
+            </a>
           </div>      
               <div class="govuk-grid-column-two-thirds">
                 <h2 class="govuk-heading-s govuk-!-padding-top-4">Contract history</h2>

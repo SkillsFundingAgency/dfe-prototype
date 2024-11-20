@@ -1,6 +1,6 @@
 {% extends "layouts/main.html" %}
 
-{% set pageName="Sign your contract" %}
+{% set pageName="View your amended contract" %}
 
 {% block beforeContent %}
 <!-- Phase banner -->
@@ -26,43 +26,46 @@
         <a class="govuk-breadcrumbs__link" href="../dashboard.html">Home</a>
       </li>
       <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="../list-view.html">Contracts and agreements</a>
+        <a class="govuk-breadcrumbs__link" href="reviewed-list-view.html">Contracts and agreements</a>
       </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="review-contract.html">Review your contract</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">Sign your contract
+      <li class="govuk-breadcrumbs__list-item">View your amended contract
       </li>
     </ol>
   </div>
+
   {% endblock %}
 
-  {% block content %}
-
+{% block content %}
     <main class="govuk-main-wrapper">
         <div class="govuk-grid-row">
           <div class="govuk-grid-column-full">
-            <h1 class="govuk-caption-l govuk-!-padding-top-6"> Higher technical education provider growth fund AY 2024 to 2025.<span class="govuk-!-font-weight-bold"> Version 1</span>
-              <strong class="govuk-tag govuk-tag--blue govuk-!-padding-left-2">
-                Ready to sign
+            <h1 class="govuk-caption-l "> ESF SSU contract variation for Greater Manchester LEP.<span class="govuk-!-font-weight-bold">  Version 9</span>
+              <strong class="govuk-tag govuk-!-padding-left-2">
+               Latest
               </strong> </h1>
-              <h1 class="govuk-heading-l  govuk-!-padding-bottom-4">Sign your contract</h1>
+              <h1 class="govuk-heading-l  govuk-!-padding-bottom-4">View your amended contract</h1>
+          </div>
+          
+          <section class="attachment">
+            <div class="attachment-thumb">
+              <a class="thumbnail pdf-open-link" target="_blank" href="#">
+                  <img title="This PDF will open in a new window" class="pdf" alt="Contract document" src="/public/images/pdf.png">
+              </a>
+            </div>
+            <div class="govuk-grid-column-one-thirds">
+                    <a class="govuk-link govuk-!-font-weight-bold" href="#" id="downloadContractLink" rel="external" target="_blank">Higher technical education provider growth fund 2024 to 2025.<br/> Version 1 (PDF, 1718KB) (opens in new tab)</a>
+            </div>
+        </section>
+          <div class="govuk-grid-column-full govuk-!-padding-top-6">
+            <p class="govuk-!-font-size-24">This contract was amended on 3 November 2024.</p>
+            <p class="govuk-body">This contract was amended and agreed by the authorised signatory for the Department for Education, acting on behalf of the Secretary of State.</p>
+            <p class="govuk-body">This contract was read by [Firstname] [Lastname] on 17 November 2024 at 4:15pm.</p>
           </div>
           <div class="govuk-grid-column-full">
-               <p class="govuk-body govuk-!-font-size-24 govuk-!-font-weight-bold">By signing you:</p>
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
-                    <li>confirm that you’ve read and understood all the terms and conditions of the contract and that [Example Organisation name] will be bound to comply with them</li>
-                    <li>confirm that you’re authorised to sign the contract on behalf of [Example Organisation name]</li>
-                    <li>agree that the contract is signed digitally and is legally binding</li>
-                  </ul>
-           </div> 
-          <div class="govuk-grid-column-full  govuk-!-padding-top-4">
-            <a type="submit" href="contract-signed-confirmation.html" class="govuk-button" data-module="govuk-button">
-                    Agree and sign
-            </a>
+         
           <h2 class="govuk-heading-s  govuk-!-padding-top-4">Contract history</h2>
             <p class="govuk-body">
-                  <a href="contract-history-page-v1.html" class="govuk-link">View all versions of this contract</a>
+                  <a href="contract-history-page.html" class="govuk-link">View all versions of this contract</a>
              </p>
              <h2 class="govuk-heading-s">Explore the topic</h2>
             <p class="govuk-body">
@@ -74,7 +77,7 @@
             </p>
              <h2 class="govuk-heading-s">Ask for help</h2>
             <p class="govuk-body">
-                  <a href="../raise-a-query.html" class="govuk-link">Submit a contract query</a>
+                  <a href="#" class="govuk-link">Submit a contract query</a>
              </p>
              </div>
         </div>  
