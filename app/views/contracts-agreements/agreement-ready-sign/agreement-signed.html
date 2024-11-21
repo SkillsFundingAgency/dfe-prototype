@@ -1,0 +1,48 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Review your agreement" %}
+
+{% block beforeContent %}
+<!-- Phase banner -->
+<div class="govuk-phase-banner">
+  <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <p class="govuk-phase-banner__content">
+          <span class="govuk-phase-banner__text">Viewing as Trn (Train) Ltd. (UKPRN: 10000082) </span>
+        </p>
+      </div>
+      <div class="govuk-grid-column-one-third">
+        <p class="govuk-phase-banner__content">
+          <span class="govuk-link govuk-!-padding-right-4"><a href="view-your-roles">View your sub-services</a></span>
+          <span class="govuk-link"><a href="#" >Sign out</a></span>
+        </p>
+      </div>
+  </div>
+ </div>
+
+ {% endblock %}
+
+{% block content %}
+
+    <main class="govuk-main-wrapper">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-full">
+            <h1 class="govuk-caption-l govuk-!-padding-top-8"> Higher technical education provider growth fund AY 2024 to 2025.<span class="govuk-!-font-weight-bold"> Version 1</span>
+             </h1>
+              <h1 class="govuk-heading-l  govuk-!-padding-bottom-2">Agreement already signed</h1>
+          </div>
+        </div> 
+        <div class="govuk-warning-text">
+          <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+          <strong class="govuk-warning-text__text">
+            <span class="govuk-visually-hidden">Warning</span>
+            You are unable to sign this contract again.
+          </strong>
+        </div>
+        <p class="govuk-body">It was signed by [First name] [Last name] on 13 November 2024 at 3:00pm.</p>
+        <p class="govuk-body">Go back to
+          <a href="../signed-list-view.html" class="govuk-link">Contracts and agreements</a>
+        </p>
+    </main>
+{% endblock %}
+
