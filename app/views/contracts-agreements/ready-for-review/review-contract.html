@@ -60,28 +60,31 @@
             <p class="govuk-!-font-size-24">This contract was amended on 3 November 2024.</p>
             <p class="govuk-body">This contract was amended and agreed by the authorised signatory for the Department for Education, acting on behalf of the Secretary of State.</p>
           </div>
-          <div class="govuk-grid-column-full"id="checkbox1-input">
-            <div class="govuk-form-group" >
-                <fieldset class="govuk-fieldset">
+          <div class="govuk-grid-column-full">
+             <div class="govuk-form-group" >
+                 <fieldset class="govuk-fieldset">
                     <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                     </legend>
-                </fieldset>
-                <div class="govuk-checkboxes govuk-checkboxes--small govuk-!-padding-bottom-2" id="checkbox1-input" data-module="govuk-checkboxes">
-                    <div class="govuk-checkboxes__item" id="checkbox1-input">
+                  <div class="govuk-checkboxes govuk-checkboxes--small govuk-!-padding-bottom-2"  data-module="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item" >
                         <input class="govuk-checkboxes__input" id="checkbox1-input" name="checkbox" type="checkbox" value="checkbox1">
                         <label class="govuk-label govuk-checkboxes__label" for="checkbox1-input">
                             I have read and understood the changes to this contract.
                         </label>
                     </div>
                 </div>
+                </fieldset>
+              </div>
+          </div>
                 <div class="govuk-inset-text">
                   The status for this contract will change to 'Reviewed' on the <a class="govuk-link" href="#">‘Contracts and agreements’ page</a>.
                 </div>
-        <div>
-            <a class="govuk-button"  href="reviewed-list-view.html" id="checkButton"  data-module="govuk-button">
-                Continue
-            </a>
-          </div>
+                <div > 
+                  <button class="govuk-button"  id="button" onclick="checkCheckbox()" data-module="govuk-button">
+                      Continue
+                  </button>
+                </div>
+         
           <h2 class="govuk-heading-s  govuk-!-padding-top-4">Contract history</h2>
             <p class="govuk-body">
                   <a href="contract-history-page-v1.html" class="govuk-link">View all versions of this contract</a>
@@ -101,4 +104,7 @@
              </div>
         </div>  
     </main>
+{% endblock %}
+{% block pageScripts %}
+  <script src="/public/javascripts/checkbox-error.js"></script>
 {% endblock %}
