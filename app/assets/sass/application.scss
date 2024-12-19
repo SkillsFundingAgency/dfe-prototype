@@ -424,8 +424,8 @@ td .variance-text {
 }
 .image-width
 {
-    width:8%;
-    height:8%;
+    width:5%;
+    height:5%;
     
 }
 .button-align
@@ -443,7 +443,36 @@ td .variance-text {
 	margin-top: 1em;
 	margin-bottom: 1.25em;
 }
-
+.my-accordion {
+    float: right; /* This aligns the amount to the right by default */
+}
+@media (max-width:420px){
+    .my-accordion{
+        float: none; /* Remove the float */
+        // display: block; /* Ensure it's displayed as block element */
+         text-align: left; /* Align text to the left */
+         flex-direction: column;
+     }
+}
+.table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
+  }
+  
+  .govuk-table {
+    width: 100%;
+    table-layout: fixed; /* Ensures that columns are fixed */
+  }
+  
+  /* Optional: You can style it further depending on your design needs */
+  @media (max-width: 600px) {
+    .govuk-table__caption {
+      font-size: 1rem;
+    }
+    .govuk-table__header, .govuk-table__cell {
+      font-size: 0.875rem;
+    }
+  }
 //**filter view */
 
     // .form-block {
