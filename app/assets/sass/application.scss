@@ -446,13 +446,16 @@ td .variance-text {
 .my-accordion {
     float: right; /* This aligns the amount to the right by default */
 }
-@media (max-width:420px){
+@media (max-width:440px){
     .my-accordion{
         float: none; /* Remove the float */
         // display: block; /* Ensure it's displayed as block element */
          text-align: left; /* Align text to the left */
          flex-direction: column;
      }
+     .mobile-screen{
+        margin-left: 50px;
+      }
 }
 .table-wrapper {
     overflow-x: auto;
@@ -472,7 +475,22 @@ td .variance-text {
     .govuk-table__header, .govuk-table__cell {
       font-size: 0.875rem;
     }
+    .save-print{
+        font-size: 00.875rem;
+        padding-top: 0px;
+    }
+    .print{
+        width:36px;
+        height:36px;
+        margin-left:0px;
+    }
+    .mobile-screen{
+        margin-left: 10px;
   }
+}
+.govuk-width-container {
+    max-width: 1024px;
+}
 //**filter view */
 
     // .form-block {
