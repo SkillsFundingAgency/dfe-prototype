@@ -8,7 +8,7 @@
   <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
         <p class="govuk-phase-banner__content">
-          <span class="govuk-phase-banner__text">Viewing as Trn (Train) Ltd. (UKPRN: 10000082) </span>
+          <span class="govuk-phase-banner__text">Viewing as Shaftesbury Technical College (UKPRN: 10002345) </span>
         </p>
       </div>
       <div class="govuk-grid-column-one-third">
@@ -66,13 +66,35 @@
             </div>
         </section>
           <div class="govuk-grid-column-full govuk-!-padding-top-6">
+            <p class="govuk-!-font-size-24"> Amended by the ESFA on 22 November 2024.</p>
             <div class="govuk-inset-text">
-              Amended by the ESFA on 22 November 2024.
              <p class="govuk-body govuk-!-padding-top-4"> You should review the amendment(s) as your funding allocation may have changed. This contract variation does not need to be signed.
             </p>
             </div>
+            <div class="govuk-grid-column-full">
+              <div class="govuk-form-group" >
+                  <fieldset class="govuk-fieldset">
+                     <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                     </legend>
+                   <div class="govuk-checkboxes govuk-checkboxes--small"  data-module="govuk-checkboxes">
+                     <div class="govuk-checkboxes__item" >
+                         <input class="govuk-checkboxes__input" id="checkbox1-input" name="checkbox" type="checkbox" value="checkbox1">
+                         <label class="govuk-label govuk-checkboxes__label" for="checkbox1-input">
+                             I have read and understood the changes to this contract.
+                         </label>
+                     </div>
+                 </div>
+                 </fieldset>
+               </div>
+           </div>
             <p class="govuk-body">This contract has been signed by the authorised signatory for the ESFA, acting on behalf of the Secretary of State, and has been digitally signed by all parties.</p>
             <p class="govuk-body">This contract was signed by [Firstname] [Lastname] on 13 November 2024 at 3:00pm as the provider’s authorised signatory.</p>
+          
+            <div > 
+              <button class="govuk-button"  id="button" onclick="checkCheckbox()" data-module="govuk-button">
+                  Continue
+              </button>
+            </div>
           </div>
           <div class="govuk-grid-column-full">
          
@@ -81,13 +103,13 @@
                   <a href="contract-history-page.html" class="govuk-link">View all versions of this contract</a>
              </p>
              <h2 class="govuk-heading-s">Explore the topic</h2>
-            <p class="govuk-body">
-              <a href="#" target=”_blank” class="govuk-link"> Higher technical education provider guides: 2024 to 2025 (opens in new tab)</a>
-            </p>
-              <p class="govuk-body">
-              <a href="#" target=”_blank” class="govuk-link">Working with the Department for Education as a provider (opens in new tab)</a>
-
-            </p>
+             <p class="govuk-body">
+               <a href="https://www.gov.uk/government/collections/esfa-funding-agreements-and-contracts#esfa-funding-agreements-for-2024-to-2025" target=”_blank” class="govuk-link"> ESFA funding agreements and contracts: 2024 to 2025 (opens in new tab) </a>
+             </p>
+               <p class="govuk-body">
+               <a href="https://www.gov.uk/guidance/how-to-become-an-approved-training-provider-and-bid-for-funding" target=”_blank” class="govuk-link">Working with the Department for Education as a provider (opens in new tab)</a>
+ 
+             </p>
              <h2 class="govuk-heading-s">Ask for help</h2>
             <p class="govuk-body">
                   <a href="#" class="govuk-link">Submit a contract query</a>
@@ -96,4 +118,6 @@
         </div>  
     </main>
 {% endblock %}
-
+{% block pageScripts %}
+  <script src="/public/javascripts/checkbox-error.js"></script>
+{% endblock %}
