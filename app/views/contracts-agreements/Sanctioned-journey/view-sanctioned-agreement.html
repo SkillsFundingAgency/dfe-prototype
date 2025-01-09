@@ -1,0 +1,99 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Review your contract" %}
+
+{% block beforeContent %}
+<!-- Phase banner -->
+<div class="govuk-phase-banner">
+  <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <p class="govuk-phase-banner__content">
+          <span class="govuk-phase-banner__text">Viewing as Shaftesbury Technical College  (UKPRN: 10002345) </span>
+        </p>
+      </div>
+      <div class="govuk-grid-column-one-third">
+        <p class="govuk-phase-banner__content">
+          <span class="govuk-link govuk-!-padding-right-4"><a href="view-your-roles">View your sub-services</a></span>
+          <span class="govuk-link"><a href="#" >Sign out</a></span>
+        </p>
+      </div>
+  </div>
+ </div>
+<!-- Pahse banner end -->
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="../dashboard.html">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="../list-view.html">Contracts and agreements</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">View your sanctioned agreement
+      </li>
+    </ol>
+  </div>
+  {% endblock %}
+  {% block content %}
+  <header>
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "p1kzsetroa");
+  </script>
+  </header>
+    <main class="govuk-main-wrapper"id ="main-content" role="main">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-full">
+            <h1 class="govuk-caption-l">ESFA apprenticeship agreement October 2024.<span class="govuk-!-font-weight-bold"> Version 8</span>
+              <strong class="govuk-tag govuk-tag--grey govuk-!-padding-left-2">
+                Sanctioned
+              </strong> </h1>
+              <h1 class="govuk-heading-l  govuk-!-padding-bottom-6">View your sanctioned agreement</h1>
+          </div>
+<!---->
+
+          <section class="attachment">
+              <div class="attachment-thumb">
+                <a class="thumbnail pdf-open-link" target="_blank" href="#">
+                    <img title="This PDF will open in a new window" class="pdf" alt="Contract document" src="/public/images/pdf.png">
+                </a>
+              </div>
+              <div class="govuk-grid-column-one-thirds">
+                      <a class="govuk-link govuk-!-font-weight-bold" href="#" id="downloadContractLink" rel="external" target="_blank">ESFA apprenticeship agreement October 2024.<br/> Version 8 (PDF, 1718KB) (opens in new tab)</a>
+              </div>
+          </section>
+          <div class="govuk-grid-column-full govuk-!-padding-top-6">
+            <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-visually-hidden">Warning</span>
+                You received an ‘insufficient progress’ assessment from Ofsted, and need to take immediate action. 
+              </strong>
+            </div>            <div class="govuk-inset-text">
+              <p class="govuk-body">See the letter sent by the ESFA on 3 January 2025. It contains the next steps you need to take.</p>
+            </div>
+            <p class="govuk-body">This agreement has been signed by the authorised signatory for the Department for Education, acting on behalf of the Secretary of State, and has been digitally signed by all parties.</p>
+            <p class="govuk-body">This agreement was signed by [Firstname] [Lastname] on 31 October 2024 at 7:12am as the provider’s authorised signatory.</p>
+
+          </div>
+          <div class="govuk-grid-column-full  govuk-!-padding-top-4">
+          
+          <h2 class="govuk-heading-s  govuk-!-padding-top-4">Agreement history</h2>
+            <p class="govuk-body">
+                  <a href="agreement-history-page.html" class="govuk-link">View all versions of this agreement</a>
+             </p>
+             <h2 class="govuk-heading-s">Explore the topic</h2>
+            <p class="govuk-body">
+              <a href="https://www.gov.uk/government/collections/esfa-funding-agreements-and-contracts#esfa-funding-agreements-for-2024-to-2025" target=”_blank” class="govuk-link"> ESFA funding agreements and contracts: 2024 to 2025 (opens in new tab) </a>
+            </p>
+              <p class="govuk-body">
+              <a href="https://www.gov.uk/guidance/how-to-become-an-approved-training-provider-and-bid-for-funding" target=”_blank” class="govuk-link">Working with the Department for Education as a provider (opens in new tab)</a>
+
+            </p>
+             </div>
+        </div>  
+    </main>
+{% endblock %}
+
