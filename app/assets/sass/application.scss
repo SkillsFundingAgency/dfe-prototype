@@ -456,6 +456,10 @@ td .variance-text {
      .mobile-screen{
         margin-left: 50px;
       }
+      .govuk-table__cell .text{
+        font-size: 0.275rem;;
+      }
+    
 }
 .table-wrapper {
     overflow-x: auto;
@@ -473,7 +477,7 @@ td .variance-text {
       font-size: 1rem;
     }
     .govuk-table__header, .govuk-table__cell {
-      font-size: 0.875rem;
+      font-size: 0.675rem;
     }
     .save-print{
         font-size: 00.875rem;
@@ -491,6 +495,19 @@ td .variance-text {
 .govuk-width-container {
     max-width: 1024px;
 }
+
+/* For mobile view with a width of 375px or smaller, force line break after "Ready" */
+@media (max-width: 375px) {
+    .govuk-tag {
+      display: inline-block;
+      white-space: nowrap;  /* Prevent the whole tag from breaking */
+    }
+  
+    .govuk-tag span {
+      display: block;  /* Ensure the text 'to sign' breaks to a new line */
+    }
+  }
+  
 //**filter view */
 
     // .form-block {
@@ -519,3 +536,5 @@ td .variance-text {
 //     max-width: 60%;
     
 // }
+
+    
