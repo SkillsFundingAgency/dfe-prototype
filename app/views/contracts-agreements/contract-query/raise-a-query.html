@@ -21,20 +21,20 @@
     </div>
    </div>
 <!-- Pahse banner end -->
-      <div class="govuk-breadcrumbs govuk-!-padding-bottom-6">
-        <ol class="govuk-breadcrumbs__list">
-          <li class="govuk-breadcrumbs__list-item">
-            <a class="govuk-breadcrumbs__link" href="dashboard.html">Home</a>
-          </li>
-          <li class="govuk-breadcrumbs__list-item">
-            <a class="govuk-breadcrumbs__link" href="list-view.html">Contracts and agreements</a>
-          </li>
-          <li class="govuk-breadcrumbs__list-item">
-            <a class="govuk-breadcrumbs__link" href="./contract-ready-sign/review-contract.html">Review your contract</a>
-          </li>
-          <li class="govuk-breadcrumbs__list-item">Submit a contract query</li>
-        </ol>
-      </div>
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="../dashboard.html">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="../list-view-signed.html">Contracts and agreements</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="../contract-ready-sign/view-signed-contract.html">View your signed contract</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">Submit a contract query</li>
+  </ol>
+</div>
       {% endblock %}
    
       {% block content %}
@@ -130,7 +130,7 @@
                </div>
               <textarea class="govuk-textarea " id="more-detail" name="moreDetail" rows="5" aria-describedby="more-detail-hint "></textarea>
             </div>
-            <button type="submit" class="govuk-button" id="submitButton" data-module="govuk-button">
+            <button type="submit" class="govuk-button" id="submit" data-module="govuk-button">
               Submit
             </button>
           </div>      
@@ -152,5 +152,5 @@
     </main>
 {% endblock %}
 {% block pageScripts %}
-  <script src="/public/javascripts/query-error.js"></script>
+  <script src="/public/javascripts/signed-query-error.js"></script>
 {% endblock %}

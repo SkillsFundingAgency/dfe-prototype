@@ -9,7 +9,7 @@
     <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
           <p class="govuk-phase-banner__content">
-            <span class="govuk-phase-banner__text">Viewing as Shaftesbury Technical College  (UKPRN: 10002345) </span>
+            <span class="govuk-phase-banner__text">Viewing as Shaftesbury Technical College  (UKPRN: 10002345)</span>
           </p>
         </div>
         <div class="govuk-grid-column-one-third">
@@ -32,7 +32,7 @@
           <li class="govuk-breadcrumbs__list-item">
             <a class="govuk-breadcrumbs__link" href="./contract-ready-sign/review-contract.html">Review your contract</a>
           </li>
-          <li class="govuk-breadcrumbs__list-item">Submit a contract query</li>
+          <li class="govuk-breadcrumbs__list-item">Submit a contract query
         </ol>
       </div>
       {% endblock %}
@@ -48,7 +48,29 @@
       </script>
       </header>
 <main class="govuk-main-wrapper" id="main-content">
-        
+           <!--error summary-->
+          <div class="govuk-error-summary" id="error2" data-module="govuk-error-summary">
+            <div role="alert">
+              <h1 class="govuk-error-summary__title">
+                There is a problem
+              </h1>
+              <div class="govuk-error-summary__body">
+                <ul class="govuk-list govuk-error-summary__list">
+                  <li>
+                    <a href="#contract-1">What is your query about</a>
+                  </li>
+                  <li>
+                    <a href="#contact-by-text">Tell us your other query reason</a>
+                  </li>
+                  <li>
+                    <a href="#more-detail">You need to briefly describe your query</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+<!--end error summary-->
+   
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-full">
           <h1 class="govuk-caption-l"> Education and skills funding (EDSK) contract variation for 2024 to 2025.<span class="govuk-!-font-weight-bold"> Version 4</span>
@@ -84,14 +106,16 @@
                 </tr>
               </tbody>
             </table>
-            <div class="govuk-form-group govuk-!-padding-top-6" id="form-group">
+            <div class="govuk-form-group   govuk-form-group--error govuk-!-padding-top-6" id="form-group">
               <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
                 <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                   <h1 class="govuk-fieldset__heading govuk-!-padding-bottom-2">
                     What is your query about?
                   </h1>
                 </legend>
-                
+                <p id="query-error" class="govuk-error-message">
+                  <span class="govuk-visually-hidden">Error:</span> What is your query about
+                </p>
                 <div class="govuk-radios" data-module="govuk-radios">
                   <div class="govuk-radios__item">
                     <input class="govuk-radios__input" id="contract-1" name="contact" type="radio" value="england">
@@ -112,27 +136,34 @@
                     </label>
                   </div>
                   <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-3">
-                    <div class="govuk-form-group" id="other">
+                    <div class="govuk-form-group govuk-form-group--error" id="other-reason">
                       <label class="govuk-label" for="contact-by-text">
                         Other query reason
                       </label>
-                      <input class="govuk-input govuk-!-width-one-third " id="contact-by-text" name="contactByText" type="tel" spellcheck="false"  autocomplete="tel">
+                      <p id="contact-by-email-error" class="govuk-error-message">
+                        <span class="govuk-visually-hidden">Error:</span>Tell us your other query reason
+                      </p>
+                      <input class="govuk-input govuk-!-width-one-third govuk-input--error" id="contact-by-text" name="contactByText" type="tel" spellcheck="false" aria-describedby="contact-by-email-error"  autocomplete="tel">
                     </div>
                   </div> 
               </fieldset>
             </div>
           </div>
+        
           <div class="govuk-grid-column-two-thirds">
-           
-            <div class="govuk-form-group" id="textarea">
-              <div class="govuk-body">
+            <div class="govuk-form-group govuk-form-group--error" id="textarea-error">
+              <div id="more-detail-hint" class="govuk-hint">
                 Briefly describe your query          
                </div>
-              <textarea class="govuk-textarea " id="more-detail" name="moreDetail" rows="5" aria-describedby="more-detail-hint "></textarea>
+              <p id="more-detail-error" class="govuk-error-message">
+                <span class="govuk-visually-hidden">Error:</span> You need to briefly describe your query
+              </p>
+              <textarea class="govuk-textarea govuk-textarea--error" id="more-detail" name="moreDetail" rows="5" aria-describedby="more-detail-hint more-detail-error"></textarea>
             </div>
-            <button type="submit" class="govuk-button" id="submitButton" data-module="govuk-button">
+
+            <a type="submit" class="govuk-button" href="contract-query-confirmation.html" id="submitButton" data-module="govuk-button">
               Submit
-            </button>
+            </a>
           </div>      
               <div class="govuk-grid-column-two-thirds">
                 <h2 class="govuk-heading-s govuk-!-padding-top-4">Contract history</h2>
@@ -150,7 +181,4 @@
           </div>  
       </div>  
     </main>
-{% endblock %}
-{% block pageScripts %}
-  <script src="/public/javascripts/query-error.js"></script>
 {% endblock %}
