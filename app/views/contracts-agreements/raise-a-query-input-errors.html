@@ -5,21 +5,36 @@
 <!-- Phase banner -->
 {% block beforeContent %}
 
-<div class="govuk-breadcrumbs">
-  <ol class="govuk-breadcrumbs__list">
-    <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="../dashboard.html">Home</a>
-    </li>
-    <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="../list-view-signed.html">Contracts and agreements</a>
-    </li>
-    <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="../contract-ready-sign/view-signed-contract.html">View your signed contract</a>
-    </li>
-    <li class="govuk-breadcrumbs__list-item">Submit a contract query</li>
-  </ol>
-</div>
+<div class="govuk-phase-banner">
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <p class="govuk-phase-banner__content">
+            <span class="govuk-phase-banner__text">Viewing as Shaftesbury Technical College  (UKPRN: 10002345)</span>
+          </p>
+        </div>
+        <div class="govuk-grid-column-one-third">
+          <p class="govuk-phase-banner__content">
+            <span class="govuk-link govuk-!-padding-right-4"><a href="view-your-roles">View your sub-services</a></span>
+            <span class="govuk-link"><a href="#" >Sign out</a></span>
+          </p>
+        </div>
+    </div>
+   </div>
 <!-- Pahse banner end -->
+      <div class="govuk-breadcrumbs govuk-!-padding-bottom-6">
+        <ol class="govuk-breadcrumbs__list">
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="dashboard.html">Home</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="list-view.html">Contracts and agreements</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="./contract-ready-sign/review-contract.html">Review your contract</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item">Submit a contract query
+        </ol>
+      </div>
       {% endblock %}
    
       {% block content %}
@@ -41,9 +56,9 @@
               </h1>
               <div class="govuk-error-summary__body">
                 <ul class="govuk-list govuk-error-summary__list">
-                  <li>
+                  <!-- <li>
                     <a href="#contract-1">What is your query about</a>
-                  </li>
+                  </li> -->
                   <li>
                     <a href="#contact-by-text">Tell us your other query reason</a>
                   </li>
@@ -55,6 +70,7 @@
             </div>
           </div>
 <!--end error summary-->
+   
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-full">
           <h1 class="govuk-caption-l"> Education and skills funding (EDSK) contract variation for 2024 to 2025.<span class="govuk-!-font-weight-bold"> Version 4</span>
@@ -90,19 +106,19 @@
                 </tr>
               </tbody>
             </table>
-            <div class="govuk-form-group govuk-form-group--error govuk-!-padding-top-6" id="form-group">
+            <div class="govuk-form-group   govuk-!-padding-top-6" id="form-group">
               <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
                 <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                   <h1 class="govuk-fieldset__heading govuk-!-padding-bottom-2">
                     What is your query about?
                   </h1>
                 </legend>
-                <p id="query-error" class="govuk-error-message">
+                <!-- <p id="query-error" class="govuk-error-message">
                   <span class="govuk-visually-hidden">Error:</span> What is your query about
-                </p>
+                </p>  govuk-form-group--error-->
                 <div class="govuk-radios" data-module="govuk-radios">
                   <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="contract-1" name="contact" type="radio" value="england">
+                    <input class="govuk-radios__input" id="contract-1" name="contact"  type="radio" value="england">
                     <label class="govuk-label govuk-radios__label" for="contract-1">
                       Contract values
                     </label>
@@ -114,7 +130,7 @@
                     </label>
                   </div>
                   <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="contact-3" name="contact" type="radio" value="text" data-aria-controls="conditional-contact-3">
+                    <input class="govuk-radios__input" id="contract-3" name="contact" type="radio" value="text" data-aria-controls="conditional-contact-3">
                     <label class="govuk-label govuk-radios__label" for="contact-3">
                       Other
                     </label>
@@ -133,6 +149,7 @@
               </fieldset>
             </div>
           </div>
+        
           <div class="govuk-grid-column-two-thirds">
             <div class="govuk-form-group govuk-form-group--error" id="textarea-error">
               <div id="more-detail-hint" class="govuk-hint">
@@ -159,8 +176,12 @@
                 </p>
                   <p class="govuk-body">
                   <a href="https://www.gov.uk/guidance/how-to-become-an-approved-training-provider-and-bid-for-funding" target=”_blank” class="govuk-link">Working with the Department for Education as a provider (opens in new tab)</a>
+    
                 </p>
           </div>  
       </div>  
     </main>
+{% endblock %}
+{% block pageScripts %}
+  <script src="/public/javascripts/query-errors.js"></script>
 {% endblock %}

@@ -56,12 +56,12 @@
               </h1>
               <div class="govuk-error-summary__body">
                 <ul class="govuk-list govuk-error-summary__list">
-                  <li>
+                  <!-- <li>
                     <a href="#contract-1">What is your query about</a>
                   </li>
                   <li>
                     <a href="#contact-by-text">Tell us your other query reason</a>
-                  </li>
+                  </li> -->
                   <li>
                     <a href="#more-detail">You need to briefly describe your query</a>
                   </li>
@@ -106,19 +106,19 @@
                 </tr>
               </tbody>
             </table>
-            <div class="govuk-form-group   govuk-form-group--error govuk-!-padding-top-6" id="form-group">
+            <div class="govuk-form-group   govuk-!-padding-top-6" id="form-group">
               <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
                 <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                   <h1 class="govuk-fieldset__heading govuk-!-padding-bottom-2">
                     What is your query about?
                   </h1>
                 </legend>
-                <p id="query-error" class="govuk-error-message">
+                <!-- <p id="query-error" class="govuk-error-message">
                   <span class="govuk-visually-hidden">Error:</span> What is your query about
-                </p>
+                </p>  govuk-form-group--error-->
                 <div class="govuk-radios" data-module="govuk-radios">
                   <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="contract-1" name="contact" type="radio" value="england">
+                    <input class="govuk-radios__input" id="contract-1" name="contact"  type="radio" value="england">
                     <label class="govuk-label govuk-radios__label" for="contract-1">
                       Contract values
                     </label>
@@ -130,20 +130,20 @@
                     </label>
                   </div>
                   <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="contact-3" name="contact" type="radio" value="text" data-aria-controls="conditional-contact-3">
+                    <input class="govuk-radios__input" id="contract-3" name="contact" type="radio" value="text" data-aria-controls="conditional-contact-3">
                     <label class="govuk-label govuk-radios__label" for="contact-3">
                       Other
                     </label>
                   </div>
                   <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-3">
-                    <div class="govuk-form-group govuk-form-group--error" id="other-reason">
+                    <div class="govuk-form-group " id="other-reason">
                       <label class="govuk-label" for="contact-by-text">
                         Other query reason
                       </label>
-                      <p id="contact-by-email-error" class="govuk-error-message">
-                        <span class="govuk-visually-hidden">Error:</span>Tell us your other query reason
-                      </p>
-                      <input class="govuk-input govuk-!-width-one-third govuk-input--error" id="contact-by-text" name="contactByText" type="tel" spellcheck="false" aria-describedby="contact-by-email-error"  autocomplete="tel">
+                      <!-- <p id="contact-by-email-error" class="govuk-error-message"> govuk-form-group--error
+                        <span class="govuk-visually-hidden">Error:</span>Tell us your other query reason  govuk-input--error
+                      </p> -->
+                      <input class="govuk-input govuk-!-width-one-third" id="contact-by-text" name="contactByText" type="tel" spellcheck="false" aria-describedby="contact-by-email-error"  autocomplete="tel">
                     </div>
                   </div> 
               </fieldset>
@@ -181,4 +181,7 @@
           </div>  
       </div>  
     </main>
+{% endblock %}
+{% block pageScripts %}
+  <script src="/public/javascripts/query-errors.js"></script>
 {% endblock %}
