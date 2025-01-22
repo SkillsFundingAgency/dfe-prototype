@@ -2,7 +2,7 @@
 
 {% set pageName="Allocation-statement" %}
 
-{% block content %}
+{% block beforeContent %}
 <!-- Phase banner -->
 <div class="govuk-phase-banner">
   <div class="govuk-grid-row">
@@ -30,7 +30,8 @@
       </li>
     </ol>
   </div>
-
+  {% endblock %}
+  {% block content %}
   <h1 class="govuk-heading-l govuk-!-padding-top-8">Allocation statements</h1>
 
   <main class="govuk-main-wrapper">
@@ -41,29 +42,29 @@
            <div class="govuk-accordion__section">
             <div class="govuk-accordion__section-header">
               <h2 class="govuk-accordion__section-heading">
-                <a class="govuk-accordion__heading-text-left govuk-accordion__section-button " id="accordion-default-heading-1">
+                <span class="govuk-accordion__heading-text-left govuk-accordion__section-button " id="accordion-default-heading-1">
                   General annual grant (GAG): academic year (AY) 2024 to 2025 
-                  <span class="govuk-accordion__heading-number-left" style="float: right;">£2,054,132.58</span>
+                  <span class="govuk-accordion__heading-number-left my-accordion">£2,054,132.58</span>
                   <span class="govuk-caption-m govuk-main-wrapper">Published: 15 May 2024. Opening date: 1 May 2024
                     <strong class="govuk-tag govuk-tag--blue"> New
                     </strong>
                   </span> 
-                </a>
+                </span>
               </h2>
             </div>
             <div id="accordion-default-content-1" class="govuk-accordion__section-content">
               <h2 class="govuk-heading-s">Funding breakdown</h2>
               <p class="govuk-body">
                 <a href="./final-secong-year-opener-gag/final-secondyear-statement-nocomparison#sb" class="govuk-link">School budget share (excluding de-delegation)</a>
-                <span class="govuk-accordion__heading-number-right">£2,008,651.60</span>
+                <span class="govuk-accordion__heading-number-left my-accordion mobile-screen">£2,008,651.60</span>
               </p>
               <p class="govuk-body">
                 <a href="./final-secong-year-opener-gag/final-secondyear-statement-nocomparison#mfg" class="govuk-link">Minimum funding guarantee</a>
-                <span class="govuk-accordion__heading-number-right">£26,730.98</span>
+                <span class="govuk-accordion__heading-number-left my-accordion mobile-screen">£26,730.98</span>
               </p> 
               <p class="govuk-body">
                 <a href="./final-secong-year-opener-gag/final-secondyear-statement-nocomparison#sg" class="govuk-link">Start-up grant</a>
-                <span class="govuk-accordion__heading-number-right">£18,750.00</span>
+                <span class="govuk-accordion__heading-number-left my-accordion mobile-screen">£18,750.00</span>
               </p>
               <h2 class="govuk-heading-s">Allocation history</h2>
               <p class="govuk-body">
@@ -79,29 +80,29 @@
           <div class="govuk-accordion__section">
             <div class="govuk-accordion__section-header">
               <h2 class="govuk-accordion__section-heading">
-                <a class="govuk-accordion__heading-text-left govuk-accordion__section-button " id="accordion-default-heading-1">
+                <span class="govuk-accordion__heading-text-left govuk-accordion__section-button " id="accordion-default-heading-1">
                   General annual grant (GAG): academic year (AY) 2023 to 2024 
-                  <span class="govuk-accordion__heading-number-left" style="float: right;">£754,646.06</span>
+                  <span class="govuk-accordion__heading-number-left my-accordion">£754,646.06</span>
                   <span class="govuk-caption-m govuk-main-wrapper">Published: 15 May 2024. Opening date: 1 May 2024
                     <strong class="govuk-tag govuk-tag--blue"> New
                     </strong>
                   </span> 
-                </a>
+                </span>
               </h2>
             </div>
             <div id="accordion-default-content-1" class="govuk-accordion__section-content">
               <h2 class="govuk-heading-s">Funding breakdown</h2>
               <p class="govuk-body">
                 <a href="./inyear-gag-statement/gag-inyear-statement-nocomparison#sb" class="govuk-link">School budget share</a>
-                <span class="govuk-accordion__heading-number-right">£676,888.09</span>
+                <span class="govuk-accordion__heading-number-left my-accordion mobile-screen">£676,888.09</span>
               </p>
               <p class="govuk-body">
                 <a href="./inyear-gag-statement/gag-inyear-statement-nocomparison#mfg" class="govuk-link">Minimum funding guarantee</a>
-                <span class="govuk-accordion__heading-number-right">£9,007.97</span>
+                <span class="govuk-accordion__heading-number-left my-accordion mobile-screen">£9,007.97</span>
               </p>
               <p class="govuk-body">
                 <a href="./inyear-gag-statement/gag-inyear-statement-nocomparison#sg" class="govuk-link">Start-up grant</a>
-                <span class="govuk-accordion__heading-number-right">£68,750.00</span>
+                <span class="govuk-accordion__heading-number-left my-accordion mobile-screen">£68,750.00</span>
               </p>
               <h2 class="govuk-heading-s">Allocation history</h2>
               <p class="govuk-body">

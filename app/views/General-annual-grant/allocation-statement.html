@@ -2,7 +2,7 @@
 
 {% set pageName="Allocation-statement" %}
 
-{% block content %}
+{% block beforeContent %}
 <!-- Phase banner -->
 <div class="govuk-phase-banner">
   <div class="govuk-grid-row">
@@ -28,6 +28,9 @@
       <li class="govuk-breadcrumbs__list-item">Allocation statements</li>
     </ol>
   </div>
+  
+  {% endblock %}
+  {% block content %}
 
   <h1 class="govuk-heading-l govuk-!-padding-top-8">Allocation statements</h1>
 
@@ -52,15 +55,15 @@
                 <h2 class="govuk-heading-s">Funding breakdown</h2>
                 <p class="govuk-body">
                   <a href="./indicative-statement-new/indicative-statement#sb" class="govuk-link">School budget share</a>
-                  <span class="govuk-accordion__heading-number-left my-accordion">£841,982.73</span>
+                  <span class="govuk-accordion__heading-number-left my-accordion mobile-screen">£841,982.73</span>
                 </p>
                 <p class="govuk-body">
                   <a href="./indicative-statement-new/indicative-statement#mfg" class="govuk-link">Minimum funding guarantee</a>
-                  <span class="govuk-accordion__heading-number-left my-accordion">£11,205.04</span>
+                  <span class="govuk-accordion__heading-number-left my-accordion mobile-screen">£11,205.04</span>
                 </p>
                 <p class="govuk-body">
                   <a href="./indicative-statement-new/indicative-statement#sg" class="govuk-link">Start-up grant</a>
-                  <span class="govuk-accordion__heading-number-left my-accordion">£68,750.00</span>
+                  <span class="govuk-accordion__heading-number-left my-accordion mobile-screen">£68,750.00</span>
                 </p>
                 <h2 class="govuk-heading-s">Allocation history</h2>
                 <p class="govuk-body">
