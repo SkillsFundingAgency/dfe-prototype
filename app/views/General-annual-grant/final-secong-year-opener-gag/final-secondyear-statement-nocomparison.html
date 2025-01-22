@@ -1,8 +1,8 @@
 {% extends "layouts/main.html" %}
 
 {% set pageName="IYO-statement" %}
+{% block beforeContent %}
 
-{% block content %}
 <!-- Phase banner -->
 <div class="govuk-phase-banner">
   <div class="govuk-grid-row">
@@ -34,6 +34,8 @@
       </li>
     </ol>
   </div>
+  {% endblock %}
+  {% block content %}
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       
@@ -76,6 +78,7 @@
             <h2 class="govuk-heading-m govuk-!-margin-bottom-0 govuk-!-font-weight-regular">Total school budget share</h2>
             <h2 class="govuk-heading-l">£2,008,651.60</h2>
             <!-- <h2 class="govuk-heading-l govuk-!-margin-bottom-4 govuk-!-font-weight-bold">Pupil-led factors</h2> -->
+            <div class="table-responsive">
             <table class="govuk-table">
               <caption class="govuk-table__caption govuk-table__caption--m govuk-!-padding-top-4 govuk-!-padding-bottom-2">Basic entitlement</caption>
               <thead class="govuk-table__head">
@@ -104,10 +107,12 @@
                 </tr>
               </tbody>
             </table>
+            </div>
             <p class="govuk-body">
               <a href="https://www.gov.uk/government/publications/academies-general-annual-grant-allocation-guides-2024-to-2025/academy-general-annual-grant-allocation-guide-2024-to-2025-academic-year#basic-entitlement:~:text=1.%20Basic%20entitlement" class="govuk-link" rel="noreferrer noopener" target="_blank">More about basic entitlement (opens in new tab)</a>
             </p>
-            <table class="govuk-table">
+            <div class="table-responsive">
+              <table class="govuk-table">
               <caption class="govuk-table__caption govuk-table__caption--m govuk-!-padding-top-4 govuk-!-padding-bottom-2">Deprivation</caption>
               <thead class="govuk-table__head">
                 <tr class="govuk-table__row">
@@ -177,6 +182,7 @@
                 </tr>
               </tbody>
             </table>
+            </div>
             <p class="govuk-body">
               <a href="https://www.gov.uk/government/publications/academies-general-annual-grant-allocation-guides-2024-to-2025/academy-general-annual-grant-allocation-guide-2024-to-2025-academic-year#deprivation:~:text=6.00-,2.%20Deprivation,-This%20is%20a" class="govuk-link" rel="noreferrer noopener" target="_blank">More about deprivation (opens in new tab)</a>
             </p>
@@ -280,7 +286,7 @@
             <div class="govuk-grid-row">
               <div class="govuk-grid-column-one-quarters">
                 <h2 class="govuk-heading-s  govuk-!-padding-left-3">Total pupil-led factors for full year  
-                  <span class="govuk-heading-s total-value govuk-!-padding-right-4">£1,885,630.60 </span>
+                  <span class="govuk-heading-s total-value govuk-!-padding-right-4 my-accordion">£1,885,630.60 </span>
                 </h2>
               </div>
             </div>
@@ -363,7 +369,7 @@
             <div class="govuk-grid-row">
               <div class="govuk-grid-column-one-quarters">
                 <h2 class="govuk-heading-s govuk-!-padding-left-3">Total other factors for full year
-                  <span class="govuk-heading-s total-value govuk-!-padding-right-4">£123,021.00 </span>
+                  <span class="govuk-heading-s total-value govuk-!-padding-right-4 my-accordion">£123,021.00 </span>
                 </h2>
               </div>
             </div>
@@ -386,6 +392,7 @@
                 </tr>
               </tbody>
             </table>
+            
             <p class="govuk-body">
               <a href="https://www.gov.uk/government/publications/academies-general-annual-grant-allocation-guides-2024-to-2025/academy-general-annual-grant-allocation-guide-2024-to-2025-academic-year#minimum-per-pupil-level-mppl" class="govuk-link" rel="noreferrer noopener" target="_blank">More about minimum per pupil level (opens in new tab)</a>
             </p>
@@ -394,14 +401,14 @@
             <div class="govuk-grid-row">
               <div class="govuk-grid-column-one-quarters">
                 <h2 class="govuk-heading-s govuk-!-padding-left-3">Total full year funding adjustments
-                  <span class="govuk-heading-s total-value govuk-!-padding-right-4">£0.00 </span>
+                  <span class="govuk-heading-s total-value govuk-!-padding-right-4 my-accordion">£0.00 </span>
                 </h2>
               </div>
             </div>
             <div class="govuk-grid-row">
               <div class="govuk-grid-column-one-quarters">
                 <h2 class="govuk-heading-l  govuk-!-padding-left-3 govuk-!-padding-top-3">Total school budget share
-                  <span class="govuk-heading-l total-value govuk-!-padding-right-4">£2,008,651.60</span>
+                  <span class="govuk-heading-l total-value govuk-!-padding-right-4 my-accordion">£2,008,651.60</span>
                 </h2>
               </div>
             </div>
@@ -515,7 +522,7 @@
             <div class="govuk-grid-row">
               <div class="govuk-grid-column-one-quarters">
                 <h2 class="govuk-heading-l govuk-!-padding-left-3 govuk-!-padding-top-3 ">Total minimum funding guarantee
-                  <span class="govuk-heading-l govuk-!-padding-right-3"style="float: right;" >£26,730.98</span>
+                  <span class="govuk-heading-l govuk-!-padding-right-3 my-accordion" >£26,730.98</span>
                 </h2>
               </div>
             </div>
@@ -554,7 +561,7 @@
             <div class="govuk-grid-row">
               <div class="govuk-grid-column-one-quarters">
                 <h2 class="govuk-heading-l  govuk-!-padding-left-3 govuk-!-padding-top-3">Total start-up grant for new academy
-                  <span class="govuk-heading-l govuk-!-padding-right-3"Style="float:right;">£18,750.00 </span>
+                  <span class="govuk-heading-l govuk-!-padding-right-3 my-accordion">£18,750.00 </span>
                 </h2>
               </div>
             </div>
