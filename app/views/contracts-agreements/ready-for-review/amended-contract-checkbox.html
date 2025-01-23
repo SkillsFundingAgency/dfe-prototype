@@ -25,7 +25,7 @@
       <li class="govuk-breadcrumbs__list-item">
         <a class="govuk-breadcrumbs__link" href="../dashboard.html">Home</a>
       </li>
-      <li class="govuk-breadcrumbs__list govuk-breadcrumbs__list-item">
+      <li class="govuk-breadcrumbs__list-item">
         <a class="govuk-breadcrumbs__link" href="../list-view.html">Contracts and agreements</a>
       </li>
       <li class="govuk-breadcrumbs__list-item">View your amended contract
@@ -62,7 +62,7 @@
               </a>
             </div>
             <div class="govuk-grid-column-one-thirds">
-                    <a class="govuk-link govuk-!-font-weight-bold image-link" href="/public/downloads/Dummy sample PDF_Ready to review EDSK V8_p1.pdf" download = "Dummy sample PDF_Ready to review EDSK V8_p1.pdf" id="downloadContractLink" rel="external" target="_blank"> Education and skills funding (EDSK) contract variation for 2023 to 2024.<br/> Version 8 (PDF, 1718KB) (opens in new tab)</a>
+                    <a class="govuk-link govuk-!-font-weight-bold" href="/public/downloads/Dummy sample PDF_Ready to review EDSK V8_p1.pdf" download = "Dummy sample PDF_Ready to review EDSK V8_p1.pdf" id="downloadContractLink" rel="external" target="_blank"> Education and skills funding (EDSK) contract variation for 2023 to 2024.<br/> Version 8 (PDF, 1718KB) (opens in new tab)</a>
             </div>
         </section>
           <div class="govuk-grid-column-full govuk-!-padding-top-6">
@@ -71,9 +71,30 @@
              <p class="govuk-body"> You should review the amendment(s) as your funding allocation may have changed. This contract variation does not need to be signed.
             </p>
             </div>
-            
+            <div class="govuk-grid-column-full">
+              <div class="govuk-form-group" >
+                  <fieldset class="govuk-fieldset">
+                     <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                     </legend>
+                   <div class="govuk-checkboxes govuk-checkboxes--small"  data-module="govuk-checkboxes">
+                     <div class="govuk-checkboxes__item" >
+                         <input class="govuk-checkboxes__input" id="checkbox1-input" name="checkbox" type="checkbox" value="checkbox1">
+                         <label class="govuk-label govuk-checkboxes__label" for="checkbox1-input">
+                             I have read and understood the changes to this contract.
+                         </label>
+                     </div>
+                 </div>
+                 </fieldset>
+               </div>
+           </div>
             <p class="govuk-body">This contract has been signed by the authorised signatory for the Education and Skills Funding Agency, acting on behalf of the Secretary of State, and has been digitally signed by all parties.</p>
             <p class="govuk-body">This contract was signed by [Firstname] [Lastname] on 13 November 2024 at 3:00pm as the provider’s authorised signatory.</p>
+          
+            <div > 
+              <button class="govuk-button"  id="button" onclick="checkCheckbox()" data-module="govuk-button">
+                  Continue
+              </button>
+            </div>
           </div>
           <div class="govuk-grid-column-full">
          
@@ -98,31 +119,5 @@
     </main>
 {% endblock %}
 {% block pageScripts %}
- <script>
-    // Function to change the breadcrumb based on the link clicked
-    document.addEventListener('DOMContentLoaded', function () {
-      // Select all PDF and image links
-      const pdfLinks = document.querySelectorAll('.pdf-open-link');
-      const breadcrumbLinks = document.querySelectorAll('.govuk-breadcrumbs__link');
-
-      // Event listener for PDF click
-      pdfLinks.forEach(function (pdfLink) {
-        pdfLink.addEventListener('click', function () {
-          // Modify breadcrumb for PDF
-          breadcrumbLinks[breadcrumbLinks.length - 1].href = 'reviewed-list-view.html'; // Go to page 1 if PDF clicked
-        });
-      });
-
-      // You can also add more logic if you want to handle image links separately
-      // For example, if you had an image link:
-      const imageLinks = document.querySelectorAll('.image-link'); // Add your image link class
-
-      imageLinks.forEach(function (imageLink) {
-        imageLink.addEventListener('click', function () {
-          // Modify breadcrumb for image link
-          breadcrumbLinks[breadcrumbLinks.length - 1].href = 'reviewed-list-view.html'; // Go to page 2 if image clicked
-        });
-      });
-    });
-  </script>  
+  <script src="/public/javascripts/checkbox-error.js"></script>
 {% endblock %}
