@@ -552,4 +552,37 @@ td .variance-text {
     
 // }
 
-    
+ /* Make sure the variance wrapper aligns to the right */
+.variance-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align items to the right */
+    gap: 8px; /* Space between items */
+    transition: all 0.3s ease;
+  }
+  
+  /* Optional: Adjust the SVG size */
+  .variance-wrapper svg {
+    width: 16px;
+    height: 16px;
+    fill: #d4351c;
+  }
+  
+  /* If you want to ensure it stays right-aligned on mobile too */
+  @media screen and (max-width: 600px) {
+    .variance-wrapper {
+      flex-direction:row; /* Optionally reverse order of elements on small screens */
+      justify-content: flex-start; /* Keep the items on the left */
+    }
+    .variance-wrapper svg {
+        width: 12px;
+        height: 12px;
+      
+      }
+  }
+  @media screen and (max-width: 400px) {
+    .variance-wrapper svg {
+      width: 11px; /* Further reduce the size */
+      height: 11px;
+    }
+  }
