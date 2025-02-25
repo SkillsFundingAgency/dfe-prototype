@@ -1,0 +1,60 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Contracts and agreements" %}
+
+{% block beforeContent %}
+<!-- Phase banner -->
+<div class="govuk-phase-banner">
+  <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <p class="govuk-phase-banner__content">
+          <span class="govuk-phase-banner__text"> Viewing as Shaftesbury Technical College  (UKPRN: 10002345) </span>
+        </p>
+      </div>
+      <div class="govuk-grid-column-one-third">
+        <p class="govuk-phase-banner__content">
+          <span class="govuk-link govuk-!-padding-right-8"><a href="view-your-roles">View your sub-services</a></span>
+          <span class="govuk-link govuk-!-padding-left-2"><a href="#" >Sign out</a></span>
+        </p>
+      </div>
+  </div>
+ </div>
+<!-- Pahse banner end -->
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="dashboard-no-contracts.html">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        Contracts and agreements
+      </li>
+    </ol>
+  </div>
+  {% endblock %}
+  
+  {% block content %}
+  <header>
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "p1kzsetroa");
+  </script>
+  </header>
+  <main class="govuk-main-wrapper">
+          <div class="govuk-grid-row govuk-!-padding-top-6">
+            <h1 class="govuk-heading-l  govuk-!-padding-left-2">Contracts and agreements</h1>
+            <div class="govuk-grid-column-full">
+                <p class="govuk-body govuk-!-padding-bottom-8">You do not have any currently funded contracts or agreements.</p>
+            </div>
+          </div>
+            <div class="govuk-grid-row govuk-!-padding-left-3">
+              <h2 class="govuk-heading-m">Find all earlier contracts and agreements</h2>
+             <p> Earlier versions can be found in the <a href="#">contract history</a>.</p>
+              <h2 class="govuk-heading-m govuk-!-padding-top-4">Download your approved contract data</h2>
+             <p> <a href="#">Download your approved contract data </a> in Comma Separated Values (CSV, 1345KB)</p>
+            </div>
+  </main>
+{% endblock %}
+

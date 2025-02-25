@@ -1,0 +1,81 @@
+{% extends "layouts/main.html" %}
+ 
+{% set pageName="Dashboard" %}
+
+{% block beforeContent %}
+
+<!-- Phase banner -->
+<div class="govuk-phase-banner">
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <p class="govuk-phase-banner__content">
+            <span class="govuk-phase-banner__text">Viewing as Shaftesbury Technical College  (UKPRN: 10002345)  </span>
+          </p>
+        </div>
+        <div class="govuk-grid-column-one-third">
+          <p class="govuk-phase-banner__content">
+            <span class="govuk-link govuk-!-padding-right-4"><a href="view-your-roles">View your sub-services</a></span>
+            <span class="govuk-link"><a href="#" >Sign out</a></span>
+          </p>
+        </div>
+    </div>
+</div>
+<!-- Pahse banner end -->
+  
+    {% endblock %}
+
+{% block content %}
+<header>
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "p1kzsetroa");
+</script>
+</header>
+  <main class="govuk-main-wrapper" id="main-content">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <h1 class="govuk-heading-l govuk-!-padding-top-4">Manage your education and skills funding </h1>
+        </div>
+      </div>
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-half">
+                <section>
+                    <div class="grid-row">
+                        <div class="dashboard-item column-third">
+                            <a href="#">
+                                <div class="tile-wrap variant">
+                                    <h3>Allocation statements</h3>
+                                    <p>View statements</p>
+                                    <span></span>
+                                </div>
+                            </a>
+                            <div class="alert-wrap"><div><span>!</span></div><div><p>5 new statements and 1 updated statement</p></div></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="govuk-grid-column-one-half">
+              <section>
+                  <div class="grid-row">
+                      <div class="dashboard-item column-third">
+                          <a href="list-view-no-contracts.html">
+                              <div class="tile-wrap variant">
+                                  <h3>Contracts and agreements</h3>
+                                  <p>View contracts</p>
+                                  <span></span>
+                              </div>
+                          </a>
+                      </div>
+                  </div>
+              </section>
+          </div>
+          </div>
+        </div>
+      </div>
+  </main>
+{% endblock %}
