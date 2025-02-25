@@ -1,0 +1,106 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Review your contract" %}
+
+{% block beforeContent %}
+<!-- Phase banner -->
+<div class="govuk-phase-banner">
+  <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <p class="govuk-phase-banner__content">
+          <span class="govuk-phase-banner__text">Viewing as Shaftesbury Technical College  (UKPRN: 10002345) </span>
+        </p>
+      </div>
+      <div class="govuk-grid-column-one-third">
+        <p class="govuk-phase-banner__content">
+          <span class="govuk-link govuk-!-padding-right-4"><a href="view-your-roles">View your sub-services</a></span>
+          <span class="govuk-link"><a href="#" >Sign out</a></span>
+        </p>
+      </div>
+  </div>
+ </div>
+<!-- Pahse banner end -->
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="../dashboard.html">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="../list-view.html">Currently funded contracts and agreements</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">Review your contract
+      </li>
+    </ol>
+  </div>
+  {% endblock %}
+  {% block content %}
+  <header>
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "p1kzsetroa");
+  </script>
+  </header>
+    <main class="govuk-main-wrapper"id ="main-content" role="main">
+        <div class="govuk-grid-row govuk-!-padding-top-6">
+          <div class="govuk-grid-column-full">
+            <h1 class="govuk-caption-l">Education and skills funding (EDSK) contract variation for 2024 to 2025.<span class="govuk-!-font-weight-bold"> Version 4</span>
+              <strong class="govuk-tag govuk-tag--blue govuk-!-padding-left-2">
+                Ready to sign
+              </strong> </h1>
+              <h1 class="govuk-heading-l  govuk-!-padding-bottom-3">Review your contract</h1>
+          </div>
+           <div class="govuk-grid-column-full">
+                <section class="attachment">
+                    <div class="attachment-thumb">
+                      <a class="thumbnail pdf-open-link" target="_blank" href="#">
+                          <img title="This PDF will open in a new window" class="pdf" alt="Contract document" src="/public/images/pdf.png">
+                      </a>
+                    </div>
+                    <div class="govuk-grid-column-one-thirds">
+                            <a class="govuk-link govuk-!-font-weight-bold" href="#" id="downloadContractLink" rel="external" target="_blank">Education and skills funding (EDSK) contract variation for 2024 to 2025.<br/> Version 4 (PDF, 1718KB) (opens in new tab)</a>
+                    </div>
+                </section>
+           </div> 
+          <div class="govuk-grid-column-full govuk-!-padding-top-6">
+            <p class="govuk-!-font-size-24">This contract is ready to sign. You must download and review it before you sign.</p>
+            <div class="govuk-inset-text">
+              <p class="govuk-body">Your funding allocation will be processed as soon as you sign.</p>
+            </div>
+            <p class="govuk-body">This contract has been agreed by the authorised signatory for the Education and Skills Funding Agency, acting on behalf of the Secretary of State.</p>
+          </div>
+          <div class="govuk-grid-column-full">
+             
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                  <a type="submit" href="sign-contract.html" class="govuk-button" data-module="govuk-button">
+                    Continue to sign
+                  </a>
+                    <div class="govuk-radios__divider  govuk-!-padding-left-4  govuk-!-padding-right-4">or</div>
+                    <a type="submit" href="../raise-a-query/raise-a-query.html" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+                      Submit a contract query
+                    </a>
+                  </div>
+                </fieldset>
+              </div>
+          </div>
+          <div class="govuk-grid-row  govuk-!-padding-left-5">
+
+          <h2 class="govuk-heading-m">Contract history</h2>
+            <p class="govuk-body">
+                  <a href="../contract-history/contract-history-page-v1.html" class="govuk-link">View all versions of this contract</a>
+             </p>
+             <h2 class="govuk-heading-m">Explore the topic</h2>
+            <p class="govuk-body">
+              <a href="https://www.gov.uk/government/collections/esfa-funding-agreements-and-contracts#esfa-funding-agreements-for-2024-to-2025" target="_blank" class="govuk-link"> ESFA funding agreements and contracts: 2024 to 2025 (opens in new tab) </a>
+            </p>
+              <p class="govuk-body">
+              <a href="https://www.gov.uk/guidance/how-to-become-an-approved-training-provider-and-bid-for-funding" target=”_blank” class="govuk-link">Working with the ESFA as a provider (opens in new tab)</a>
+            </p>
+          </div>
+        </div>  
+    </main>
+{% endblock %}
+

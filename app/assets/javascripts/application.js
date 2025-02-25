@@ -103,3 +103,99 @@ radioButtons.forEach(function(radioButton) {
 // });
 
 //**End */
+
+// let currentPage = 1;  // Initial page
+// const totalPages = 42; // Total pages available
+
+// // Function to generate pagination dynamically
+// function generatePagination(currentPage, totalPages) {
+//   const paginationList = document.getElementById("pagination-list");
+//   paginationList.innerHTML = ""; // Clear current pagination
+
+//   const createPageItem = (page, isCurrent = false) => {
+//     const li = document.createElement("li");
+//     li.classList.add("govuk-pagination__item");
+    
+//     if (isCurrent) {
+//       li.classList.add("govuk-pagination__item--current");
+//       li.innerHTML = `<a class="govuk-link govuk-pagination__link" href="#" aria-label="Page ${page}" aria-current="page">${page}</a>`;
+//     } else {
+//       li.innerHTML = `<a class="govuk-link govuk-pagination__link" href="#" aria-label="Page ${page}">${page}</a>`;
+//     }
+
+//     return li;
+//   };
+
+//   const pagesToShow = [];
+//   // Show pages before, current, and after with ellipses where necessary
+//   if (currentPage === 1) {
+//     pagesToShow.push(1, '...', 6,7,'...',totalPages);
+//   } else if (currentPage === totalPages) {
+//     pagesToShow.push(1, '...', totalPages - 2, totalPages - 1, totalPages);
+//   } else {
+//     pagesToShow.push(1,'...', currentPage, currentPage + 1, '...', totalPages);
+//   }
+
+//   // Generate pagination items
+//   pagesToShow.forEach(page => {
+//     if (page === '...') {
+//       const li = document.createElement("li");
+//       li.classList.add("govuk-pagination__item", "govuk-pagination__item--ellipses");
+//       li.innerText = '...';
+//       paginationList.appendChild(li);
+//     } else {
+//       paginationList.appendChild(createPageItem(page, page === currentPage));
+//     }
+//   });
+
+//   // Handle the previous and next buttons
+//   const prevButton = document.getElementById("prev-page");
+//   const nextButton = document.getElementById("next-page");
+
+//   if (currentPage === 1) {
+//     prevButton.setAttribute("aria-disabled", "true");
+//     prevButton.classList.add("govuk-link--disabled");
+//   } else {
+//     prevButton.removeAttribute("aria-disabled");
+//     prevButton.classList.remove("govuk-link--disabled");
+//   }
+
+//   if (currentPage === totalPages) {
+//     nextButton.setAttribute("aria-disabled", "true");
+//     nextButton.classList.add("govuk-link--disabled");
+//   } else {
+//     nextButton.removeAttribute("aria-disabled");
+//     nextButton.classList.remove("govuk-link--disabled");
+//   }
+// }
+
+// // Handle pagination item clicks
+// document.getElementById("pagination-list").addEventListener("click", function(e) {
+//   if (e.target.tagName === 'A') {
+//     const page = parseInt(e.target.innerText);
+//     if (!isNaN(page)) {
+//       currentPage = page;
+//       generatePagination(currentPage, totalPages);
+//     }
+//   }
+// });
+
+// // Handle next/prev button clicks
+// document.getElementById("next-page").addEventListener("click", function(e) {
+//   e.preventDefault();
+//   if (currentPage < totalPages) {
+//     currentPage++;
+//     generatePagination(currentPage, totalPages);
+//   }
+// });
+
+// document.getElementById("prev-page").addEventListener("click", function(e) {
+//   e.preventDefault();
+//   if (currentPage > 1) {
+//     currentPage--;
+//     generatePagination(currentPage, totalPages);
+//   }
+// });
+
+// // Initialize the pagination on page load
+// generatePagination(currentPage, totalPages);

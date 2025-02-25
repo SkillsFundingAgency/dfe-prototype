@@ -1,0 +1,89 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="View your signed contract" %}
+
+{% block beforeContent %}
+<!-- Phase banner -->
+<div class="govuk-phase-banner">
+  <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <p class="govuk-phase-banner__content">
+          <span class="govuk-phase-banner__text">Viewing as Shaftesbury Technical College  (UKPRN: 10002345) </span>
+        </p>
+      </div>
+      <div class="govuk-grid-column-one-third">
+        <p class="govuk-phase-banner__content">
+          <span class="govuk-link govuk-!-padding-right-4"><a href="view-your-roles">View your sub-services</a></span>
+          <span class="govuk-link"><a href="#" >Sign out</a></span>
+        </p>
+      </div>
+  </div>
+ </div>
+<!-- Pahse banner end -->
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="../dashboard.html">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="../list-view.html">Currently funded contracts and agreements</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">View your signed contract
+      </li>
+    </ol>
+  </div>
+
+  {% endblock %}
+
+{% block content %}
+<header>
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "p1kzsetroa");
+</script>
+</header>
+    <main class="govuk-main-wrapper">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-full">
+            <h1 class="govuk-caption-l">ESFA adult skills fund (procured from August 2023) contract variation for 2024 to 2025. <span class="govuk-!-font-weight-bold"> Version 2</span>
+               </h1>
+              <h1 class="govuk-heading-l  govuk-!-padding-bottom-4">View your signed contract</h1>
+          </div>
+          <div class="govuk-grid-column-full">
+              <section class="attachment">
+                <div class="attachment-thumb">
+                  <a class="thumbnail pdf-open-link" target="_blank" href="#">
+                      <img title="This PDF will open in a new window" class="pdf" alt="Contract document" src="/public/images/pdf.png">
+                  </a>
+                </div>
+                <div class="govuk-grid-column-one-thirds">
+                        <a class="govuk-link govuk-!-font-weight-bold" href="#" id="downloadContractLink" rel="external" target="_blank">ESFA adult skills fund (procured from August 2023) contract variation for 2024 to 2025.<br/> Version 2 (PDF, 1718KB) (opens in new tab)</a>
+                </div>
+            </section>
+          </div>  
+          <div class="govuk-grid-column-full govuk-!-padding-top-6">
+            <p class="govuk-body">This contract has been signed by the authorised signatory for the Education and Skills Funding Agency, acting on behalf of the Secretary of State, and has been digitally signed by all parties.</p>
+            <p class="govuk-body">This contract was signed by [Firstname] [Lastname] on  [Date] at [Time]  as the provider’s authorised signatory.</p>
+          </div>
+          <div class="govuk-grid-column-full">
+         
+          <h2 class="govuk-heading-m  govuk-!-padding-top-4">Contract history</h2>
+            <p class="govuk-body">
+                  <a href="#" class="govuk-link">View all versions of this contract</a>
+             </p>
+             <h2 class="govuk-heading-m">Explore the topic</h2>
+             <p class="govuk-body">
+               <a href="https://www.gov.uk/government/collections/esfa-funding-agreements-and-contracts#esfa-funding-agreements-for-2024-to-2025" target=”_blank” class="govuk-link"> ESFA funding agreements and contracts: 2024 to 2025 (opens in new tab) </a>
+             </p>
+               <p class="govuk-body">
+               <a href="https://www.gov.uk/guidance/how-to-become-an-approved-training-provider-and-bid-for-funding" target=”_blank” class="govuk-link">Working with the ESFA as a provider (opens in new tab)</a>
+ 
+             </p>
+             </div>
+        </div>  
+    </main>
+{% endblock %}
+

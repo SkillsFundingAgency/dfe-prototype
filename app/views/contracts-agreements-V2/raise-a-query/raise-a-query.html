@@ -1,0 +1,156 @@
+{% extends "layouts/main.html" %}
+ 
+{% set pageName="Submit a contract query" %}
+ 
+<!-- Phase banner -->
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <p class="govuk-phase-banner__content">
+            <span class="govuk-phase-banner__text">Viewing as Shaftesbury Technical College  (UKPRN: 10002345) </span>
+          </p>
+        </div>
+        <div class="govuk-grid-column-one-third">
+          <p class="govuk-phase-banner__content">
+            <span class="govuk-link govuk-!-padding-right-4"><a href="view-your-roles">View your sub-services</a></span>
+            <span class="govuk-link"><a href="#" >Sign out</a></span>
+          </p>
+        </div>
+    </div>
+   </div>
+<!-- Pahse banner end -->
+      <div class="govuk-breadcrumbs govuk-!-padding-bottom-6">
+        <ol class="govuk-breadcrumbs__list">
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="dashboard.html">Home</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="../list-view.html">Currently funded contracts and agreements</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="../ready-to-sign/review-contract.html">Review your contract</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item">Submit a contract query</li>
+        </ol>
+      </div>
+      {% endblock %}
+   
+      {% block content %}
+      <header>
+        <script type="text/javascript">
+          (function(c,l,a,r,i,t,y){
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+          })(window, document, "clarity", "script", "p1kzsetroa");
+      </script>
+      </header>
+<main class="govuk-main-wrapper" id="main-content">
+        
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <h1 class="govuk-caption-l"> Education and skills funding (EDSK) contract variation for 2024 to 2025.<span class="govuk-!-font-weight-bold"> Version 4</span>
+          </h1>
+            <h1 class="govuk-heading-l  govuk-!-padding-bottom-6">Submit a contract query</h1>
+        </div>
+        <div class="govuk-grid-column-full">
+             <p class="govuk-body govuk-!-padding-bottom-4">Use this form to ask us questions about your contract.</p>
+             <table class="govuk-table">
+              <caption class="govuk-table__caption govuk-table__caption--m govuk-!-padding-bottom-6">Check your details</caption>
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header">Item</th>
+                  <th scope="col" class="govuk-table__header">Description</th>
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Name</th>
+                  <td class="govuk-table__cell">Firstname Lastname</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Provider</th>
+                  <td class="govuk-table__cell"> Shaftesbury Technical College</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">UKPRN</th>
+                  <td class="govuk-table__cell">12345678</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Email</th>
+                  <td class="govuk-table__cell">firstname.lastname@organisation.com</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="govuk-form-group govuk-!-padding-top-6" id="form-group">
+              <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                  <h1 class="govuk-fieldset__heading govuk-!-padding-bottom-2">
+                    What is your query about?
+                  </h1>
+                </legend>
+                
+                <div class="govuk-radios" data-module="govuk-radios">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="contract-1" name="contact" type="radio" value="england">
+                    <label class="govuk-label govuk-radios__label" for="contract-1">
+                      Contract values
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="contract-2" name="contact" type="radio" value="scotland">
+                    <label class="govuk-label govuk-radios__label" for="contract-2">
+                      Contract dates
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="contract-3" name="contact" type="radio" value="text" data-aria-controls="conditional-contact-3">
+                    <label class="govuk-label govuk-radios__label" for="contact-3">
+                      Other
+                    </label>
+                  </div>
+                  <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-3">
+                    <div class="govuk-form-group" id="other">
+                      <label class="govuk-label" for="contact-by-text">
+                        Other query reason
+                      </label>
+                      <input class="govuk-input govuk-!-width-one-third " id="contact-by-text" name="contactByText" type="tel" spellcheck="false"  autocomplete="tel">
+                    </div>
+                  </div> 
+              </fieldset>
+            </div>
+          </div>
+          <div class="govuk-grid-column-two-thirds">
+           
+            <div class="govuk-form-group" id="textarea">
+              <div class="govuk-body">
+                Briefly describe your query          
+               </div>
+              <textarea class="govuk-textarea " id="more-detail" name="moreDetail" rows="5" aria-describedby="more-detail-hint "></textarea>
+            </div>
+            <button type="submit" class="govuk-button" id="submitButton" data-module="govuk-button">
+              Submit
+            </button>
+          </div>      
+              <div class="govuk-grid-column-two-thirds">
+                <h2 class="govuk-heading-m govuk-!-padding-top-4">Contract history</h2>
+                <p class="govuk-body">
+                      <a href="#" class="govuk-link">View all versions of this contract</a>
+                </p>
+                <h2 class="govuk-heading-m">Explore the topic</h2>
+                <p class="govuk-body">
+                  <a href="https://www.gov.uk/government/collections/esfa-funding-agreements-and-contracts#esfa-funding-agreements-for-2024-to-2025" target=”_blank” class="govuk-link"> ESFA funding agreements and contracts: 2024 to 2025 (opens in new tab) </a>
+                </p>
+                  <p class="govuk-body">
+                  <a href="https://www.gov.uk/guidance/how-to-become-an-approved-training-provider-and-bid-for-funding" target=”_blank” class="govuk-link">Working with the ESFA as a provider (opens in new tab)</a>
+    
+                </p>
+          </div>  
+      </div>  
+    </main>
+{% endblock %}
+{% block pageScripts %}
+  <script src="/public/javascripts/query-error.js"></script>
+{% endblock %}

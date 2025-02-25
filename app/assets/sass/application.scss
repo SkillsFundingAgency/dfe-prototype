@@ -369,7 +369,7 @@ span.has-email-alerts span.text {
 .attachment{
     position: relative;
         margin: 30px 0;
-        padding: 0px 0 0 18px;
+        padding: 0px 0 0 10px;
 }
 .attachment .attachment-thumb {
     position: relative;
@@ -522,7 +522,11 @@ td .variance-text {
       display: block;  /* Ensure the text 'to sign' breaks to a new line */
     }
   }
-  
+  @media (min-width: 40.0625em) {
+    .related {
+        border-top: 1px solid #b1b4b6;
+    }
+}
 //**filter view */
 
     // .form-block {
@@ -586,3 +590,29 @@ td .variance-text {
       height: 11px;
     }
   }
+  .govuk-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .govuk-pagination__link {
+    margin: 0 5px;
+    text-decoration: none;
+  }
+  .govuk-pagination__item--current {
+    font-weight: bold;
+  }
+  .govuk-pagination__item--ellipses {
+    cursor: default;
+  }
+  .govuk-pagination__link--disabled {
+    color: #ccc;
+    cursor: not-allowed;
+  }
+  .govuk-radios__divider
+  {
+    display: inline;
+  }
+.govuk-colour{
+  color: $govuk-secondary-text-colour;
+}

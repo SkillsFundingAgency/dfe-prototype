@@ -1,0 +1,88 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Sign your contract" %}
+
+{% block beforeContent %}
+<!-- Phase banner -->
+<div class="govuk-phase-banner">
+  <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <p class="govuk-phase-banner__content">
+          <span class="govuk-phase-banner__text">Viewing as Shaftesbury Technical College  (UKPRN: 10002345) </span>
+        </p>
+      </div>
+      <div class="govuk-grid-column-one-third">
+        <p class="govuk-phase-banner__content">
+          <span class="govuk-link govuk-!-padding-right-4"><a href="view-your-roles">View your sub-services</a></span>
+          <span class="govuk-link"><a href="#" >Sign out</a></span>
+        </p>
+      </div>
+  </div>
+ </div>
+<!-- Pahse banner end -->
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="../dashboard.html">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="../list-view.html">Currently funded contracts and agreements</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="review-contract.html">Review your contract</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">Sign your contract
+      </li>
+    </ol>
+  </div>
+  {% endblock %}
+
+  {% block content %}
+  <header>
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "p1kzsetroa");
+  </script>
+  </header>
+    <main class="govuk-main-wrapper">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-full">
+            <h1 class="govuk-caption-l govuk-!-padding-top-6">Education and skills funding (EDSK) contract variation for 2024 to 2025.<span class="govuk-!-font-weight-bold"> Version 4</span>
+              <strong class="govuk-tag govuk-tag--blue govuk-!-padding-left-2">
+                Ready to sign
+              </strong> </h1>
+              <h1 class="govuk-heading-l  govuk-!-padding-bottom-4">Sign your contract</h1>
+          </div>
+          <div class="govuk-grid-column-full">
+               <p class="govuk-body govuk-!-font-size-24 govuk-!-font-weight-bold">By signing you:</p>
+                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+                    <li>confirm that you’ve read and understood all the terms and conditions of the contract and that Shaftesbury Technical College will be bound to comply with them</li>
+                    <li>confirm that you’re authorised to sign the contract on behalf of Shaftesbury Technical College</li>
+                    <li>agree that the contract is signed digitally and is legally binding</li>
+                  </ul>
+           </div> 
+          <div class="govuk-grid-column-full  govuk-!-padding-top-4">
+            <a type="submit" href="contract-signed-confirmation.html" class="govuk-button" data-module="govuk-button">
+                    Agree and sign
+            </a>
+            
+          <h2 class="govuk-heading-m  govuk-!-padding-top-4">Contract history</h2>
+            <p class="govuk-body">
+                  <a href="../contract-history/contract-history-page-v1.html" class="govuk-link">View all versions of this contract</a>
+             </p>
+             <h2 class="govuk-heading-m">Explore the topic</h2>
+             <p class="govuk-body">
+               <a href="https://www.gov.uk/government/collections/esfa-funding-agreements-and-contracts#esfa-funding-agreements-for-2024-to-2025" target=”_blank” class="govuk-link"> ESFA funding agreements and contracts: 2024 to 2025 (opens in new tab) </a>
+             </p>
+               <p class="govuk-body">
+               <a href="https://www.gov.uk/guidance/how-to-become-an-approved-training-provider-and-bid-for-funding" target=”_blank” class="govuk-link">Working with the ESFA as a provider (opens in new tab)</a>
+ 
+             </p>
+            </div>
+        </div>  
+    </main>
+{% endblock %}
+
