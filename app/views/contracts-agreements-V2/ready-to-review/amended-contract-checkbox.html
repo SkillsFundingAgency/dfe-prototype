@@ -68,52 +68,43 @@
                 <div class="govuk-grid-column-full govuk-!-padding-top-6">
                     <p class="govuk-!-font-size-24">This contract was amended by the Education and Skills Funding Agency on 22 January 2025.</p>
                   <div class="govuk-inset-text">
-                    <p class="govuk-body"> You should download this contract variation and review the amendment(s) as your organisation’s funding allocation may have changed.
-                    </p>
-                    <p class="govuk-body">
-                    This contract variation does not need to be signed.
-                   </p>
+                     <p class="govuk-body"> You should download this contract variation and review the amendment(s) as your organisation’s funding allocation may have changed.
+                      </p>
+                      <p class="govuk-body">
+                      This contract variation does not need to be signed.
+                     </p>
                   </div>
                 </div>  
                   <div class="govuk-grid-column-full">
-                    <div class="govuk-form-group">
-                      <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
-                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                          <h1 class="govuk-fieldset__heading">
-                            Confirm you have read and understood the amendment(s)
-                          </h1>
-                        </legend>
-                        <div id="contact-hint" class="govuk-hint">
-                          Select one of the options below. The ‘Ready to review’ alert disappears only after you have selected ‘Yes’ 
-                        </div>
-                        <div class="govuk-radios" data-module="govuk-radios">
-                          <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="radio1" name="contact" type="radio" value="radio1" data-aria-controls="conditional-contact">
-                            <label class="govuk-label govuk-radios__label" for="contact">
-                              Yes, my organisation has read and understood the amendment(s)
-                            </label>
-                          </div>
-                          <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="radio2" name="contact" type="radio" value="radio1" data-aria-controls="conditional-contact">
-                            <label class="govuk-label govuk-radios__label" for="contact">
-                              No, my organisation is still reviewing the amendments(s)
+                    <div class="govuk-form-group" >
+                        <fieldset class="govuk-fieldset">
+                          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                            <h1 class="govuk-fieldset__heading">
+                              Confirm you have read and understood the changes
+                            </h1>
+                          </legend>
+                        <div class="govuk-checkboxes govuk-checkboxes--small"  data-module="govuk-checkboxes">
+                          <div class="govuk-checkboxes__item" >
+                              <input class="govuk-checkboxes__input" id="checkbox1-input" name="checkbox" type="checkbox" value="checkbox1">
+                              <label class="govuk-label govuk-checkboxes__label" for="checkbox1-input">
+                                Tick the box to confirm you have read and understood the changes to this contract.
+                              </label>
                           </div>
                         </div>
-                      </fieldset>
+                        </fieldset>
                     </div>
-                   
                       <p class="govuk-body">This contract has been signed by the authorised signatory for the Education and Skills Funding Agency, acting on behalf of the Secretary of State, and has been digitally signed by all parties.</p>
-                      <p class="govuk-body">This contract was signed by [authorised representative] on [Date] at [Time] as the provider’s authorised signatory.</p>
+                      <p class="govuk-body">This contract was signed by [Firstname] [Lastname] on 13 November 2024 at 3:00pm as the provider’s authorised signatory.</p>
                   </div>
               <div class="govuk-grid-column-full govuk-!-padding-top-4 ">
                 <div class="govuk-form-group">
                   <fieldset class="govuk-fieldset">
                       <div class="govuk-button-group">
-                        <button class="govuk-button"  id="button" onclick="checkRadio()" data-module="govuk-button">
+                        <button class="govuk-button"  id="button" onclick="checkCheckbox()" data-module="govuk-button">
                           Continue
                       </button>
                         <div class="govuk-radios__divider govuk-!-padding-right-2">or</div>
-                        <a type="submit" href="#" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+                        <a type="submit" href="../raise-a-query/raise-a-query.html" class="govuk-button govuk-button--secondary" data-module="govuk-button">
                           Submit a contract query
                         </a>
                     </div>
@@ -127,18 +118,18 @@
                   <p class="govuk-body">
                         <a href="../contract-history/contract-history-page-v1.html" class="govuk-link">View all versions of this contract</a>
                    </p>
-                   <!-- <h2 class="govuk-heading-m">Explore the topic</h2>
+                   <h2 class="govuk-heading-m">Explore the topic</h2>
                   <p class="govuk-body">
                     <a href="https://www.gov.uk/government/collections/esfa-funding-agreements-and-contracts#esfa-funding-agreements-for-2024-to-2025" target=”_blank” class="govuk-link"> ESFA funding agreements and contracts: 2024 to 2025 (opens in new tab) </a>
                   </p>
                     <p class="govuk-body">
                     <a href="https://www.gov.uk/guidance/how-to-become-an-approved-training-provider-and-bid-for-funding" target=”_blank” class="govuk-link">Working with the ESFA as a provider (opens in new tab)</a>
-                  </p> -->
+                  </p>
               </div>
          </div>
       </div>  
    </main>
 {% endblock %}
 {% block pageScripts %}
-  <script src="/public/javascripts/radio-error.js"></script>
+  <script src="/public/javascripts/checkbox-error.js"></script>
 {% endblock %}
