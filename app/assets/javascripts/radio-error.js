@@ -11,7 +11,7 @@ function checkRadio() {
         }
      
      else {
-            window.location = "amended-contract-error.html"
+            window.location = "amended-contract-error1.html"
         }
     }
     function checkRadio1() {
